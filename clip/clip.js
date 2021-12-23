@@ -133,6 +133,18 @@ export const clip = new HTMLClip({
 </div>
 </div>
 <div class="container19"></div>
+<div class="container20">
+      <div class="lr-bg-wrapper lr-bg-wrapper-0">
+        <video autoplay muted >
+          <source src="assets/woman-caravan.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="lr-bg-wrapper lr-bg-wrapper-1">
+        <video autoplay muted >
+          <source src="assets/woman-caravan.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
 </div>
    `,
   css: `
@@ -148,7 +160,7 @@ export const clip = new HTMLClip({
     position:absolute;
     top:100%;
   }
-  .container3,.container4,.container5{
+  .container3,.container4,.container5,.container20{
     width: 800px;
     height: 450px;
     display:flex;
@@ -185,7 +197,7 @@ export const clip = new HTMLClip({
     background-size: cover;
   }
   .container19{
-    background:url("assets/caravan-friends.jpg");
+    background:url("assets/photo.jpg");
     background-size: cover;
   }
   .lr-bg-wrapper,.ud-bg-wrapper{
@@ -207,12 +219,19 @@ export const clip = new HTMLClip({
   .ud-bg-wrapper-1{
     top: 225px;
   }
-  .lr-bg-wrapper-0 video,.lr-bg-wrapper-1 video{
+  .container3 .lr-bg-wrapper-0 video,.container3 .lr-bg-wrapper-1 video{
     width: 800px;
     height: 450px;
     object-fit: cover;
     position: absolute;
     top:100%;
+  }
+  .container20 .lr-bg-wrapper-0 video,.container20 .lr-bg-wrapper-1 video{
+    width: 800px;
+    height: 450px;
+    object-fit: cover;
+    position: absolute;
+    top:-100%;
   }
   .bg{
     width: 800px;
@@ -692,6 +711,7 @@ const container16remove = new CSSEffect(
     easing: "easeInOutQuad",
   }
 );
+//container17
 const container17appear = new CSSEffect(
   {
     animatedAttrs: {
@@ -710,6 +730,7 @@ const container17remove = container16remove.clone(
     selector: ".container17",
   }
 );
+//container18
 const container18appear = container17appear.clone(
   {},
   {
@@ -722,16 +743,26 @@ const container18remove = container16remove.clone(
     selector: ".container18",
   }
 );
+//container19
 const container19appear = container17appear.clone(
   {},
   {
-    selector: ".container18",
+    selector: ".container19",
   }
 );
 const container19remove = container16remove.clone(
   {},
   {
-    selector: ".container18",
+    selector: ".container19",
+  }
+);
+//container20
+const container20appear = container1appear.clone(
+  {},
+  {
+    selector: ".container20 .lr-bg-wrapper-0 video,.container20 .lr-bg-wrapper-1 video",
+    duration:400,
+    easing: "easeInOutQuad"
   }
 );
 
@@ -791,5 +822,7 @@ clip.addIncident(container17remove, 11200);
 clip.addIncident(container18appear, 11200);
 clip.addIncident(container18remove, 12100);
 clip.addIncident(container19appear, 12100);
+clip.addIncident(container19remove, 12900);
+clip.addIncident(container20appear, 12800);
 
 
