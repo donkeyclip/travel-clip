@@ -7,7 +7,10 @@ export default [
       title2:"COLLECT",
       subtitle2:"MOMENTS",
       text3:"DISCOVER NEW PLACES",
-      text4:["TRAVEL","IS","LIFE"]
+      text4:["TRAVEL","IS","LIFE"],
+      title5a:"ADVENTURE",
+      title5b:"AWAITS",
+      text6:["LIVE","EVERY","MOMENT"],
     },
   },
   {
