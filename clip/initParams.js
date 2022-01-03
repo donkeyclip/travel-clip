@@ -11,6 +11,8 @@ export default [
       title5a:"ADVENTURE",
       title5b:"AWAITS",
       text6:["LIVE","EVERY","MOMENT"],
+      text7:"ROAD TRIPS",
+      text8:"TAKE PICTURES"
     },
   },
   {

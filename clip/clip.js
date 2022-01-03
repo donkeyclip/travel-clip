@@ -54,7 +54,7 @@ export const clip = new HTMLClip({
   </div>
   <div class="container6">
       <video autoplay muted>
-        <source src="assets/girl-camera.mp4#t=10,20" type="video/mp4">
+        <source src="assets/girl-camera.mp4" type="video/mp4">
       </video>
     </div>
     <div class="container7">
@@ -73,13 +73,13 @@ export const clip = new HTMLClip({
 </video>
 </div>
 <div class="container10">
-<video autoplay muted loop>
+<video autoplay muted>
   <source src="assets/travel-with-friends.mp4" type="video/mp4">
 </video>
 </div>
 <div class="container11"></div>
 <div class="container12">
-<video autoplay muted loop>
+<video autoplay muted>
   <source src="assets/ballons.mp4" type="video/mp4">
 </video>
 </div>
@@ -88,7 +88,7 @@ export const clip = new HTMLClip({
 <div class="container14"></div>
 <div class="container15"></div>
 <div class="container16">
-<video autoplay muted loop>
+<video autoplay muted>
   <source src="assets/map.mp4" type="video/mp4">
 </video>
 <div class="borderText text4">
@@ -101,7 +101,7 @@ export const clip = new HTMLClip({
 </div>
 <div class="container17"></div>
 <div class="container18">
-<video autoplay muted loop>
+<video autoplay muted>
   <source src="assets/woman-road.mp4" type="video/mp4">
 </video>
 </div>
@@ -115,24 +115,24 @@ export const clip = new HTMLClip({
 <div class="container19"></div>
 <div class="container21">
       <div class="lr-bg-wrapper lr-bg-wrapper-0">
-        <video autoplay muted loop>
+        <video autoplay muted>
           <source src="assets/girl-with-map-car.mp4" type="video/mp4">
         </video>
       </div>
       <div class="lr-bg-wrapper lr-bg-wrapper-1">
-        <video autoplay muted loop>
+        <video autoplay muted >
           <source src="assets/girl-with-map-car.mp4" type="video/mp4">
         </video>
       </div>
 </div>
 <div class="container20">
       <div class="lr-wrapper-0">
-        <video autoplay muted loop>
+        <video autoplay muted >
           <source src="assets/woman-caravan.mp4" type="video/mp4">
         </video>
       </div>
       <div class="lr-wrapper-1">
-        <video autoplay muted loop>
+        <video autoplay muted>
           <source src="assets/woman-caravan.mp4" type="video/mp4">
         </video>
       </div>
@@ -140,7 +140,7 @@ export const clip = new HTMLClip({
 <div class="container22">
   <div class="lr-bg-wrapper lr-bg-wrapper-0">
   <div class="bg bg-0">
-  <video autoplay muted loop>
+  <video autoplay muted>
   <source src="assets/girl-with-map-car.mp4" type="video/mp4">
 </video>
 <div class="title5a">{{initParams.title5a}}</div>
@@ -148,7 +148,7 @@ export const clip = new HTMLClip({
   </div>
   <div class="lr-bg-wrapper lr-bg-wrapper-1">
   <div class="bg bg-1">
-  <video autoplay muted loop>
+  <video autoplay muted>
     <source src="assets/girl-with-map-car.mp4" type="video/mp4">
   </video>
   <div class="title5b">{{initParams.title5b}}</div>
@@ -157,12 +157,12 @@ export const clip = new HTMLClip({
 </div>
 <div class="container23">
       <div class="lr-bg-wrapper lr-bg-wrapper-0">
-        <video autoplay muted loop>
+        <video autoplay muted>
           <source src="assets/friends-nature.mp4" type="video/mp4">
         </video>
       </div>
       <div class="lr-bg-wrapper lr-bg-wrapper-1">
-        <video autoplay muted loop>
+        <video autoplay muted>
           <source src="assets/friends-nature.mp4" type="video/mp4">
         </video>
       </div>
@@ -180,7 +180,7 @@ export const clip = new HTMLClip({
   <div class="lr-con r-con"></div>
 </div>
 <div class="container26">
-  <video autoplay muted loop>
+  <video autoplay muted>
     <source src="assets/fire.mp4" type="video/mp4">
   </video>
   <div class="borderText text6">
@@ -191,12 +191,58 @@ export const clip = new HTMLClip({
     </div>
   </div>
 </div>
+<div class="container27"></div>
 <div class="borderText text6 mask">
-<div id="root">
-  <div class="looper" mc-for="key,item" mc-of="initParams.text6">
-      <span>{{ item }}</span>
+  <div id="root">
+    <div class="looper" mc-for="key,item" mc-of="initParams.text6">
+        <span>{{ item }}</span>
+    </div>
   </div>
 </div>
+<div class="container28"></div>
+<div class="container29">
+  <div class="lr-con l-con"></div>
+  <div class="lr-con r-con"></div>
+</div>
+<div class="container30">
+  <div class="bg half-l"><div class="text7 text7left">{{initParams.text7}}</div></div>
+  <div class="bg half-r"><div class="text7 text7right">{{initParams.text7}}</div></div>
+</div>
+<div class="container31"></div>
+<div class="text7 mask">{{initParams.text7}}</div>
+<div class="container32"></div>
+<div class="container33">
+  <div class="bg half-l"></div>
+  <div class="bg half-r"></div>
+</div>
+<div class="container34">
+  <div class="lr-con l-con">
+    <video autoplay muted>
+      <source src="assets/girl-camera.mp4" type="video/mp4">
+    </video>
+    <div class="text8 text8left">{{initParams.text8}}</div>
+  </div>
+  <div class="lr-con r-con">
+    <video autoplay muted>
+      <source src="assets/girl-camera.mp4" type="video/mp4">
+    </video>
+    <div class="text8 text8right">{{initParams.text8}}</div>
+  </div>
+</div>
+<div class="container35">
+<video autoplay muted>
+  <source src="assets/woman-road.mp4" type="video/mp4">
+</video>
+</div>
+<div class="text8 mask">{{initParams.text8}}</div>
+<div class="container36">
+<video autoplay muted>
+  <source src="assets/travel-with-friends.mp4" type="video/mp4">
+</video>
+</div>
+<div class="container37">
+  <div class="lr-con l-con"></div>
+  <div class="lr-con r-con"></div>
 </div>
 </div>
    `,
@@ -233,19 +279,19 @@ export const clip = new HTMLClip({
     position:absolute;
     left:-100%;
   }
-  .container16{
+  .container16,.container35,.container36{
     width:800px;
     height:450px;
     position:absolute;
     clip-path: polygon(0 18%, 100% 18%, 100% 18%, 0 18%);
   }
-  .container17,.container18,.container19,.container26{
+  .container17,.container18,.container19,.container26,.container27,.container28{
     width:800px;
     height:450px;
     position:absolute;
     top:-100%;
   }
-  .container24,.container25{
+  .container24,.container25,.container29,.container30,.container31,.container32,.container33,.container34,.container37{
     width:800px;
     height:450px;
     position:absolute;
@@ -273,6 +319,24 @@ export const clip = new HTMLClip({
   .container19{
     background:url("assets/photo.jpg");
     background-size: cover;
+  }
+  .container27{
+    background:url("assets/caravan-friends.jpg");
+    background-size: cover;
+  }
+  .container28{
+    background:url("assets/photo.jpg");
+    background-size: cover;
+  }
+  .container31{
+    background:url("assets/road-trip.jpg");
+    background-size: cover;
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  .container32{
+    background:url("assets/friends.jpg");
+    background-size: cover;
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0, 0 0);
   }
   .lr-bg-wrapper,.ud-bg-wrapper{
     width:800px;
@@ -313,10 +377,7 @@ export const clip = new HTMLClip({
   .container20 .lr-wrapper-1 video{
     clip-path: polygon(100% 0, 50% 0, 50% 100%, 100% 100%);
   }
-  .container26 video{
-    width: 800px;
-    height: 450px;
-    object-fit: cover;
+  .container26 video,.container34 video{
     position: absolute;
   }
   .bg{
@@ -330,6 +391,14 @@ export const clip = new HTMLClip({
   }
   .container5 .bg{
     background:url(assets/girl-road.jpg);
+    background-size: cover;
+  }
+  .container30 .bg{
+    background:url(assets/caravan-dog.png);
+    background-size: cover;
+  }
+  .container33 .bg{
+    background:url(assets/girl-map.jpg);
     background-size: cover;
   }
   .container3 .lr-bg-wrapper-0 video,.container21 .lr-bg-wrapper-0 video{
@@ -383,18 +452,36 @@ export const clip = new HTMLClip({
     background-position:50px 30px;
   
   }
-  .container25 .lr-con{
+  .lr-con{
     width:800px;
     height:450px;
     position:absolute;
+  }
+  .container25 .lr-con{
     background:url("assets/girl-guitar.png");
     background-size: cover;
   }
-  .container25 .l-con{
+  .container29 .lr-con{
+    background:url("assets/caravan-road.png");
+    background-size: cover;
+  }
+  .container37 .lr-con{
+    background:url("assets/mountain-breath.jpg");
+    background-size: cover;
+  }
+  .l-con{
     clip-path: polygon(13% 0, 13% 0, 13% 100%, 13% 100%);
   }
-  .container25 .r-con{
+  .r-con{
     clip-path: polygon(87% 0, 87% 0, 87% 100%, 87% 100%);
+  }
+  .half-l{
+    left:-400px;
+    clip-path: polygon(0 0, 10% 0, 10% 100%, 0% 100%);
+  }
+  .half-r{
+    left:400px;
+    clip-path: polygon(100% 0, 90% 0, 90% 100%, 100% 100%);
   }
   video{
     object-fit: cover;
@@ -506,11 +593,57 @@ export const clip = new HTMLClip({
   letter-spacing:5px;
   padding:20px;
  }
+ .text7{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing:7px;
+  color:white;
+  font-size:27px;
+  font-weight:300;
+  padding-left:7px;
+  border-bottom:2px solid white;
+ }
+ .text7left{
+   left:20%;
+ }
+ .text7right{
+  right:20%;
+ }
+.text7.mask,.text8.mask{
+  opacity:0;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.text8{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+
+  background: white;
+  color: black;
+  mix-blend-mode: screen;
+
+  font-size:27px;
+  letter-spacing:10px;
+  padding:2px 0px 0px 10px;
+
+  
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight:900;
+}
+.text8left{
+  left:70%;
+}
+.text8right{
+  right:70%;
+}
   `,
   fonts: [
     {
       type: "google-font",
-      src: "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;900&family=Yanone+Kaffeesatz:wght@200;400&display=swap",
+      src: "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;900&family=Yanone+Kaffeesatz:wght@200;300;400&display=swap",
     },
   ],
   host: document.getElementById("clip"),
@@ -1095,6 +1228,239 @@ const text6bgremove = new CSSEffect(
     duration:1
   }
 );
+//container27
+const container27appear = new CSSEffect(
+  {
+    animatedAttrs: {
+      top:"0%"
+    },
+  },
+  {
+    selector: ".container27",
+    duration:300,
+    easing: "easeInOutQuad",
+  }
+);
+//container28
+const container28appear = new CSSEffect(
+  {
+    animatedAttrs: {
+      top:"0%"
+    },
+  },
+  {
+    selector: ".container28",
+    duration:200,
+    easing: "easeInOutQuad",
+  }
+);
+//container29
+const container29appearbg0 = container25appearbg0.clone(
+  {},
+  {
+    selector: ".container29 .l-con",
+  }
+);
+const container29appearbg1 = container25appearbg1.clone(
+  {},
+  {
+    selector: ".container29 .r-con",
+  }
+);
+//container30
+const container30appearbg0 = new CSSEffect(
+  {
+    animatedAttrs: {
+      left:"0px",
+      clipPath:"polygon(0 0, 50% 0, 50% 100%, 0% 100%)"
+    },
+  },
+  {
+    selector: ".container30 .half-l",
+    duration:300,
+    easing: "easeInOutQuad",
+  }
+);
+const container30appearbg1 = new CSSEffect(
+  {
+    animatedAttrs: {
+      left:"0px",
+      clipPath:"polygon(100% 0, 50% 0, 50% 100%, 100% 100%)"
+    },
+  },
+  {
+    selector: ".container30 .half-r",
+    duration:300,
+    easing: "easeInOutQuad",
+  }
+);
+const text7left = new CSSEffect(
+  {
+    animatedAttrs: {
+      left:"50%",
+      transform:{
+        translateX:"-50%"
+      }
+    },
+  },
+  {
+    selector: ".text7left",
+    duration:350,
+    easing: "easeInOutQuad",
+  }
+);
+const text7right = new CSSEffect(
+  {
+    animatedAttrs: {
+      right:"50%",
+      transform:{
+        translateX:"50%"
+      }
+    },
+  },
+  {
+    selector: ".text7right",
+    duration:350,
+    easing: "easeInOutQuad",
+  }
+);
+const text7mask = new CSSEffect(
+  {
+    animatedAttrs: {
+      opacity:1
+    },
+  },
+  {
+    duration: 1,
+    selector: ".text7.mask",
+  }
+);
+const text7lrremove = new CSSEffect(
+  {
+    animatedAttrs: {
+      opacity:0
+    },
+  },
+  {
+    duration: 1,
+    selector: ".text7left,.text7right",
+  }
+);
+//container31
+const container31appear = new CSSEffect(
+  {
+    animatedAttrs: {
+      clipPath:"polygon(0 0, 100% 0, 100% 0, 0 100%, 0 100%)"
+    },
+  },
+  {
+    selector: ".container31",
+    duration:200,
+    easing: "easeInOutQuad",
+  }
+);
+const container31change = new CSSEffect(
+  {
+    animatedAttrs: {
+      clipPath:"polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%)"
+    },
+  },
+  {
+    selector: ".container31",
+    duration:200,
+    easing: "easeInOutQuad",
+  }
+);
+//container32
+const container32appear = container31appear.clone(
+  {},
+  {
+    selector:".container32"
+  }
+);
+const container32change = container31change.clone(
+  {},
+  {
+    selector:".container32"
+  }
+);
+//container33
+const container33appearbg0 = container30appearbg0.clone(
+  {},
+  {
+    selector:".container33 .half-l"
+  }
+);
+const container33appearbg1 = container30appearbg1.clone(
+  {},
+  {
+    selector:".container33 .half-r"
+  }
+);
+//container34
+const container34appearbg0 = container29appearbg0.clone(
+  {},
+  {
+    selector:".container34 .l-con"
+  }
+);
+const container34appearbg1 = container29appearbg1.clone(
+  {},
+  {
+    selector:".container34 .r-con"
+  }
+);
+const text8left = text7left.clone(
+  {},
+  {
+    selector:".text8left"
+  }
+);
+const text8right = text7right.clone(
+  {},
+  {
+    selector:".text8right"
+  }
+);
+const text8mask = text7mask.clone(
+  {},
+  {
+    selector:".text8.mask"
+  }
+);
+const text8lrremove = text7lrremove.clone(
+  {},
+  {
+    selector:".text8left,.text8right"
+  }
+);
+//container35
+const container35appear = container16appear.clone(
+  {},
+  {
+    selector:".container35"
+  }
+);
+//container36
+const container36appear = container16appear.clone(
+  {},
+  {
+    selector:".container36"
+  }
+);
+//container37
+const container37appearbg0 = container25appearbg0.clone(
+  {},
+  {
+    selector:".container37 .l-con"
+  }
+);
+const container37appearbg1 = container25appearbg1.clone(
+  {},
+  {
+    selector:".container37 .r-con"
+  }
+);
 clip.addIncident(container1appear, 0);
 clip.addIncident(text1appear, 0);
 clip.addIncident(container1remove, 1000);
@@ -1170,5 +1536,32 @@ clip.addIncident(container26appear, 17700);
 clip.addIncident(text6move, 17700);
 clip.addIncident(text6mask, 18000);
 clip.addIncident(text6bgremove, 18001);
+clip.addIncident(container27appear, 18100);
+clip.addIncident(container28appear, 18500);
+clip.addIncident(container29appearbg0, 18700);
+clip.addIncident(container29appearbg1, 18700);
+clip.addIncident(container30appearbg0, 19100);
+clip.addIncident(container30appearbg1, 19100);
+clip.addIncident(text7left, 19100);
+clip.addIncident(text7right, 19100);
+clip.addIncident(text7mask, 19450);
+clip.addIncident(text7lrremove, 19451);
 
+clip.addIncident(container31appear, 19500);
+clip.addIncident(container31change, 20000);
+clip.addIncident(container32appear, 20300);
+clip.addIncident(container32change, 20700);
+clip.addIncident(container33appearbg0, 20700);
+clip.addIncident(container33appearbg1, 20700);
 
+clip.addIncident(container34appearbg0, 21000);
+clip.addIncident(container34appearbg1, 21000);
+clip.addIncident(text8left, 21000);
+clip.addIncident(text8right, 21000);
+clip.addIncident(text8mask, 21350);
+clip.addIncident(text8lrremove, 21351);
+
+clip.addIncident(container35appear, 21850);
+clip.addIncident(container36appear, 22200);
+clip.addIncident(container37appearbg0, 22800);
+clip.addIncident(container37appearbg1, 22800);
