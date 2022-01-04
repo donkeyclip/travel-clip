@@ -157,14 +157,10 @@ export const clip = new HTMLClip({
 </div>
 <div class="container23">
       <div class="lr-bg-wrapper lr-bg-wrapper-0">
-        <video autoplay muted>
-          <source src="assets/friends-nature.mp4" type="video/mp4">
-        </video>
+        <div class="bg bg-0"></div>
       </div>
       <div class="lr-bg-wrapper lr-bg-wrapper-1">
-        <video autoplay muted>
-          <source src="assets/friends-nature.mp4" type="video/mp4">
-        </video>
+      <div class="bg bg-1"></div>
       </div>
 </div>
 <div class="text5">
@@ -180,9 +176,6 @@ export const clip = new HTMLClip({
   <div class="lr-con r-con"></div>
 </div>
 <div class="container26">
-  <video autoplay muted>
-    <source src="assets/fire.mp4" type="video/mp4">
-  </video>
   <div class="borderText text6">
     <div id="root">
       <div class="looper" mc-for="key,item" mc-of="initParams.text6">
@@ -320,6 +313,10 @@ export const clip = new HTMLClip({
     background:url("assets/photo.jpg");
     background-size: cover;
   }
+  .container26{
+    background:url("assets/fire.png");
+    background-size: cover;
+  }
   .container27{
     background:url("assets/caravan-friends.jpg");
     background-size: cover;
@@ -377,7 +374,7 @@ export const clip = new HTMLClip({
   .container20 .lr-wrapper-1 video{
     clip-path: polygon(100% 0, 50% 0, 50% 100%, 100% 100%);
   }
-  .container26 video,.container34 video{
+  .container34 video{
     position: absolute;
   }
   .bg{
@@ -391,6 +388,10 @@ export const clip = new HTMLClip({
   }
   .container5 .bg{
     background:url(assets/girl-road.jpg);
+    background-size: cover;
+  }
+  .container23 .bg{
+    background:url(assets/friends-nature.png);
     background-size: cover;
   }
   .container30 .bg{
@@ -429,12 +430,10 @@ export const clip = new HTMLClip({
   .container22 .lr-bg-wrapper-1 .bg-1{
     right:800px;
   }
-  .container23 .lr-bg-wrapper-0 video{
-    position:absolute;
+  .container23 .lr-bg-wrapper-0 .bg-0{
     left:800px;
   }
-  .container23 .lr-bg-wrapper-1 video{
-    position:absolute;
+  .container23 .lr-bg-wrapper-1 .bg-1{
     right:800px;
   }
   .container24 .diag{
@@ -1130,13 +1129,13 @@ const text5mask = new CSSEffect(
 const container23appearbg0 = container22appearbg0.clone(
   {},
   {
-    selector: ".container23 .lr-bg-wrapper-0 video",
+    selector: ".container23 .lr-bg-wrapper-0 .bg-0",
   }
 );
 const container23appearbg1 = container22appearbg1.clone(
   {},
   {
-    selector: ".container23 .lr-bg-wrapper-1 video",
+    selector: ".container23 .lr-bg-wrapper-1 .bg-1",
   }
 );
 //container24
@@ -1470,98 +1469,98 @@ clip.addIncident(container3appear, 2000);
 clip.addIncident(container3removebg0, 3000);
 clip.addIncident(container3removebg1, 3000);
 clip.addIncident(container4appear, 3000);
-clip.addIncident(container5appear, 4000);
-clip.addIncident(text2appear, 4300);
+clip.addIncident(container5appear, 3600);
+clip.addIncident(text2appear, 3900);
 
-clip.addIncident(container6appear, 5000);
-clip.addIncident(container6change1, 5300);
-clip.addIncident(container6change3, 5400);
+clip.addIncident(container6appear, 4200);
+clip.addIncident(container6change1, 4500);
+clip.addIncident(container6change3, 4600);
 
-clip.addIncident(container7appear, 5270);
-clip.addIncident(container7change1, 5600);
-clip.addIncident(container7change3, 5700);
+clip.addIncident(container7appear, 4470);
+clip.addIncident(container7change1, 4800);
+clip.addIncident(container7change3, 4900);
 
-clip.addIncident(container8appear, 5570);
-clip.addIncident(container8change1, 5900);
-clip.addIncident(container8change3, 6000);
+clip.addIncident(container8appear, 4770);
+clip.addIncident(container8change1, 5100);
+clip.addIncident(container8change3, 5200);
 
-clip.addIncident(container9appear, 5870);
-clip.addIncident(container9change1, 6200);
-clip.addIncident(container9change3, 6300);
+clip.addIncident(container9appear, 5070);
+clip.addIncident(container9change1, 5400);
+clip.addIncident(container9change3, 5500);
 
-clip.addIncident(container10appear, 6170);
-clip.addIncident(container10change1, 6500);
-clip.addIncident(container10change3, 6600);
+clip.addIncident(container10appear, 5370);
+clip.addIncident(container10change1, 5700);
+clip.addIncident(container10change3, 5800);
 //h teleytaia diagonia
-clip.addIncident(container11appear, 6470);
+clip.addIncident(container11appear, 5670);
 
 //
-clip.addIncident(container12appear, 7000);
-clip.addIncident(text3appear, 7000);
-clip.addIncident(container12remove, 7800);
-clip.addIncident(container13appear, 7700);
-clip.addIncident(container13remove, 9100);
+clip.addIncident(container12appear, 6000);
+clip.addIncident(text3appear, 6000);
+// clip.addIncident(container12remove, 6800);
+clip.addIncident(container13appear, 6700);
+// clip.addIncident(container13remove, 8100);
 
-clip.addIncident(container14appear, 8400);
-clip.addIncident(container14remove, 9900);
+clip.addIncident(container14appear, 7400);
+clip.addIncident(container14remove, 8900);
 
-clip.addIncident(container15appear, 9100);
+clip.addIncident(container15appear, 8100);
 
-clip.addIncident(container16appear, 9900);
-clip.addIncident(text4move, 9900);
-clip.addIncident(text4mask, 10200);
-clip.addIncident(text4bgremove, 10201);
-clip.addIncident(container16remove, 10300);
-clip.addIncident(container17appear, 10300);
-clip.addIncident(container17remove, 11200);
-clip.addIncident(container18appear, 11200);
-clip.addIncident(container18remove, 12100);
-clip.addIncident(container19appear, 12100);
-clip.addIncident(container19remove, 13000);
-clip.addIncident(container20appear, 12900);
-clip.addIncident(container21appear, 13300);
-clip.addIncident(container20removebg0, 13600);
-clip.addIncident(container20removebg1, 13600);
-clip.addIncident(container22appearbg0, 13600);
-clip.addIncident(container22appearbg1, 13600);
-clip.addIncident(text5mask, 14000);
-clip.addIncident(container23appearbg0,15000);
-clip.addIncident(container23appearbg1,15000);
-clip.addIncident(container24appearbg0, 17000);
-clip.addIncident(container24appearbg1, 17000);
-clip.addIncident(container25appearbg0, 17300);
-clip.addIncident(container25appearbg1, 17300);
+clip.addIncident(container16appear, 8900);
+clip.addIncident(text4move, 8900);
+clip.addIncident(text4mask, 9200);
+clip.addIncident(text4bgremove, 9201);
+clip.addIncident(container16remove, 9300);
+clip.addIncident(container17appear, 9300);
+clip.addIncident(container17remove, 10200);
+clip.addIncident(container18appear, 10200);
+clip.addIncident(container18remove, 11100);
+clip.addIncident(container19appear, 11100);
+clip.addIncident(container19remove, 12000);
+clip.addIncident(container20appear, 11900);
+clip.addIncident(container21appear, 12300);
+clip.addIncident(container20removebg0, 12600);
+clip.addIncident(container20removebg1, 12600);
+clip.addIncident(container22appearbg0, 12600);
+clip.addIncident(container22appearbg1, 12600);
+clip.addIncident(text5mask, 13000);
+clip.addIncident(container23appearbg0,14000);
+clip.addIncident(container23appearbg1,14000);
+clip.addIncident(container24appearbg0, 15500); 
+clip.addIncident(container24appearbg1, 15500);
+clip.addIncident(container25appearbg0, 15800);
+clip.addIncident(container25appearbg1, 15800);
 
-clip.addIncident(container26appear, 17700);
-clip.addIncident(text6move, 17700);
-clip.addIncident(text6mask, 18000);
-clip.addIncident(text6bgremove, 18001);
-clip.addIncident(container27appear, 18100);
-clip.addIncident(container28appear, 18500);
-clip.addIncident(container29appearbg0, 18700);
-clip.addIncident(container29appearbg1, 18700);
-clip.addIncident(container30appearbg0, 19100);
-clip.addIncident(container30appearbg1, 19100);
-clip.addIncident(text7left, 19100);
-clip.addIncident(text7right, 19100);
-clip.addIncident(text7mask, 19450);
-clip.addIncident(text7lrremove, 19451);
+clip.addIncident(container26appear, 16200);
+clip.addIncident(text6move, 16200);
+clip.addIncident(text6mask, 16500);
+clip.addIncident(text6bgremove, 16501);
+clip.addIncident(container27appear, 16900);
+clip.addIncident(container28appear, 17300);
+clip.addIncident(container29appearbg0, 17500);
+clip.addIncident(container29appearbg1, 17500);
+clip.addIncident(container30appearbg0, 17900);
+clip.addIncident(container30appearbg1, 17900);
+clip.addIncident(text7left, 17900);
+clip.addIncident(text7right, 17900);
+clip.addIncident(text7mask, 18250);
+clip.addIncident(text7lrremove, 18251);
 
-clip.addIncident(container31appear, 19500);
-clip.addIncident(container31change, 20000);
-clip.addIncident(container32appear, 20300);
-clip.addIncident(container32change, 20700);
-clip.addIncident(container33appearbg0, 20700);
-clip.addIncident(container33appearbg1, 20700);
+clip.addIncident(container31appear, 18400);
+clip.addIncident(container31change, 18900);
+clip.addIncident(container32appear, 19200);
+clip.addIncident(container32change, 19600);
+clip.addIncident(container33appearbg0, 19600);
+clip.addIncident(container33appearbg1, 19600);
 
-clip.addIncident(container34appearbg0, 21000);
-clip.addIncident(container34appearbg1, 21000);
-clip.addIncident(text8left, 21000);
-clip.addIncident(text8right, 21000);
-clip.addIncident(text8mask, 21350);
-clip.addIncident(text8lrremove, 21351);
+clip.addIncident(container34appearbg0, 19900);
+clip.addIncident(container34appearbg1, 19900);
+clip.addIncident(text8left, 19900);
+clip.addIncident(text8right, 19900);
+clip.addIncident(text8mask, 20250);
+clip.addIncident(text8lrremove, 20251);
 
-clip.addIncident(container35appear, 21850);
-clip.addIncident(container36appear, 22200);
-clip.addIncident(container37appearbg0, 22800);
-clip.addIncident(container37appearbg1, 22800);
+clip.addIncident(container35appear, 20950); 
+clip.addIncident(container36appear, 21500);
+clip.addIncident(container37appearbg0, 22500);
+clip.addIncident(container37appearbg1, 22500);
