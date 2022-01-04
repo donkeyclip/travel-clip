@@ -1,4 +1,4 @@
-import { HTMLClip, CSSEffect } from "@donkeyclip/motorcortex";
+import { HTMLClip, CSSEffect, AudioPlayback } from "@donkeyclip/motorcortex";
 import initParams from "./initParams";
 
 export const clip = new HTMLClip({
@@ -650,9 +650,26 @@ export const clip = new HTMLClip({
     width: "800px",
     height: "450px",
   },
+  audioSources: [
+    {
+      src: "assets/audio.mp3",
+      id: "audio",
+      base64: false,
+    },
+  ],
   initParams: initParams[0].value,
 });
 
+const audioPlayback = new AudioPlayback(
+  {},
+  {
+    selector: "~#audio",
+    startFrom: 0,
+    duration: 22500,
+  }
+);
+
+clip.addIncident(audioPlayback, 0);
 const container1appear = new CSSEffect(
   {
     animatedAttrs: {
