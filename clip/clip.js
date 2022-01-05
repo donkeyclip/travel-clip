@@ -1,30 +1,17 @@
 import { HTMLClip, CSSEffect, AudioPlayback } from "@donkeyclip/motorcortex";
 import initParams from "./initParams";
+import MotorCortex from "@donkeyclip/motorcortex";
+import MCVideo from "@kissmybutton/motorcortex-video";
+const VideoPlugin = MotorCortex.loadPlugin(MCVideo);
 
 export const clip = new HTMLClip({
   html: `
   <div class="container">
-    <div class="container1">
-      <video autoplay muted>
-        <source src="assets/boots.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="container2">
-      <video autoplay muted>
-        <source src="assets/girl-car.mp4" type="video/mp4">
-      </video>
-    </div>
+    <div class="container1"></div>
+    <div class="container2"></div>
     <div class="container3">
-      <div class="lr-bg-wrapper lr-bg-wrapper-0">
-        <video autoplay muted>
-          <source src="assets/clothes.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="lr-bg-wrapper lr-bg-wrapper-1">
-        <video autoplay muted>
-          <source src="assets/clothes.mp4" type="video/mp4">
-        </video>
-      </div>
+      <div class="lr-bg-wrapper lr-bg-wrapper-0"><div class="vid"></div></div>
+      <div class="lr-bg-wrapper lr-bg-wrapper-1"><div class="vid"></div></div>
     </div>
     <div class="text1">
       <div class="title">{{ initParams.title1 }}</div>
@@ -54,12 +41,12 @@ export const clip = new HTMLClip({
   </div>
   <div class="container6">
       <video autoplay muted>
-        <source src="assets/girl-camera.mp4" type="video/mp4">
+        <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-camera.mp4?raw=true" type="video/mp4">
       </video>
     </div>
     <div class="container7">
     <video autoplay muted>
-      <source src="assets/girl-car.mp4" type="video/mp4">
+      <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-car.mp4?raw=true" type="video/mp4">
     </video>
   </div>
   <div class="text2 mask">
@@ -69,18 +56,18 @@ export const clip = new HTMLClip({
   <div class="container8"></div>
 <div class="container9">
 <video autoplay muted>
-  <source src="assets/woman-caravan.mp4" type="video/mp4">
+  <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-caravan.mp4?raw=true" type="video/mp4">
 </video>
 </div>
 <div class="container10">
 <video autoplay muted>
-  <source src="assets/travel-with-friends.mp4" type="video/mp4">
+  <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/travel-with-friends.mp4?raw=true" type="video/mp4">
 </video>
 </div>
 <div class="container11"></div>
 <div class="container12">
 <video autoplay muted>
-  <source src="assets/ballons.mp4" type="video/mp4">
+  <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/ballons.mp4?raw=true" type="video/mp4">
 </video>
 </div>
 <div class="container13"></div>
@@ -89,7 +76,7 @@ export const clip = new HTMLClip({
 <div class="container15"></div>
 <div class="container16">
 <video autoplay muted>
-  <source src="assets/map.mp4" type="video/mp4">
+  <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/map.mp4?raw=true" type="video/mp4">
 </video>
 <div class="borderText text4">
 <div id="root">
@@ -102,7 +89,7 @@ export const clip = new HTMLClip({
 <div class="container17"></div>
 <div class="container18">
 <video autoplay muted>
-  <source src="assets/woman-road.mp4" type="video/mp4">
+  <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-road.mp4?raw=true" type="video/mp4">
 </video>
 </div>
 <div class="borderText text4 mask">
@@ -116,24 +103,24 @@ export const clip = new HTMLClip({
 <div class="container21">
       <div class="lr-bg-wrapper lr-bg-wrapper-0">
         <video autoplay muted>
-          <source src="assets/girl-with-map-car.mp4" type="video/mp4">
+          <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-with-map-car.mp4?raw=true" type="video/mp4">
         </video>
       </div>
       <div class="lr-bg-wrapper lr-bg-wrapper-1">
         <video autoplay muted >
-          <source src="assets/girl-with-map-car.mp4" type="video/mp4">
+          <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-with-map-car.mp4?raw=true" type="video/mp4">
         </video>
       </div>
 </div>
 <div class="container20">
       <div class="lr-wrapper-0">
         <video autoplay muted >
-          <source src="assets/woman-caravan.mp4" type="video/mp4">
+          <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-caravan.mp4?raw=true" type="video/mp4">
         </video>
       </div>
       <div class="lr-wrapper-1">
         <video autoplay muted>
-          <source src="assets/woman-caravan.mp4" type="video/mp4">
+          <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-caravan.mp4?raw=true" type="video/mp4">
         </video>
       </div>
 </div>
@@ -141,7 +128,7 @@ export const clip = new HTMLClip({
   <div class="lr-bg-wrapper lr-bg-wrapper-0">
   <div class="bg bg-0">
   <video autoplay muted>
-  <source src="assets/girl-with-map-car.mp4" type="video/mp4">
+  <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-with-map-car.mp4?raw=true" type="video/mp4">
 </video>
 <div class="title5a">{{initParams.title5a}}</div>
 </div>
@@ -149,7 +136,7 @@ export const clip = new HTMLClip({
   <div class="lr-bg-wrapper lr-bg-wrapper-1">
   <div class="bg bg-1">
   <video autoplay muted>
-    <source src="assets/girl-with-map-car.mp4" type="video/mp4">
+    <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-with-map-car.mp4?raw=true" type="video/mp4">
   </video>
   <div class="title5b">{{initParams.title5b}}</div>
   </div>
@@ -211,26 +198,26 @@ export const clip = new HTMLClip({
 <div class="container34">
   <div class="lr-con l-con">
     <video autoplay muted>
-      <source src="assets/girl-camera.mp4" type="video/mp4">
+      <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-camera.mp4?raw=true" type="video/mp4">
     </video>
     <div class="text8 text8left">{{initParams.text8}}</div>
   </div>
   <div class="lr-con r-con">
     <video autoplay muted>
-      <source src="assets/girl-camera.mp4" type="video/mp4">
+      <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-camera.mp4?raw=true" type="video/mp4">
     </video>
     <div class="text8 text8right">{{initParams.text8}}</div>
   </div>
 </div>
 <div class="container35">
 <video autoplay muted>
-  <source src="assets/woman-road.mp4" type="video/mp4">
+  <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-road.mp4?raw=true" type="video/mp4">
 </video>
 </div>
 <div class="text8 mask">{{initParams.text8}}</div>
 <div class="container36">
 <video autoplay muted>
-  <source src="assets/travel-with-friends.mp4" type="video/mp4">
+  <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/travel-with-friends.mp4?raw=true" type="video/mp4">
 </video>
 </div>
 <div class="container37">
@@ -290,48 +277,48 @@ export const clip = new HTMLClip({
     position:absolute;
   }
   .container8,.container11{
-    background:url("assets/woman-mountain.png");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-mountain.png?raw=true");
     background-size: cover;
   }
   .container13{
-    background:url("assets/friends-road.png");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/friends-road.png?raw=true");
     background-size: cover;
   }
   .container14{
-    background:url("assets/inside-caravan.png");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/inside-caravan.png?raw=true");
     background-size: cover;
   }
   .container15{
-    background:url("assets/caravan-dog.png");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/caravan-dog.png?raw=true");
     background-size: cover;
   }
   .container17{
-    background:url("assets/mountain-breath.jpg");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/mountain-breath.jpg?raw=true");
     background-size: cover;
   }
   .container19{
-    background:url("assets/photo.jpg");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/photo.jpg?raw=true");
     background-size: cover;
   }
   .container26{
-    background:url("assets/fire.png");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/fire.png?raw=true");
     background-size: cover;
   }
   .container27{
-    background:url("assets/caravan-friends.jpg");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/caravan-friends.jpg?raw=true");
     background-size: cover;
   }
   .container28{
-    background:url("assets/photo.jpg");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/photo.jpg?raw=true");
     background-size: cover;
   }
   .container31{
-    background:url("assets/road-trip.jpg");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/road-trip.jpg?raw=true");
     background-size: cover;
     clip-path: polygon(0 0, 0 0, 0 0, 0 0, 0 0);
   }
   .container32{
-    background:url("assets/friends.jpg");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/friends.jpg?raw=true");
     background-size: cover;
     clip-path: polygon(0 0, 0 0, 0 0, 0 0, 0 0);
   }
@@ -354,7 +341,7 @@ export const clip = new HTMLClip({
   .ud-bg-wrapper-1{
     top: 225px;
   }
-  .container3 .lr-bg-wrapper-0 video,.container3 .lr-bg-wrapper-1 video,.container21 .lr-bg-wrapper-0 video,.container21 .lr-bg-wrapper-1 video{
+  .container3 .lr-bg-wrapper-0 .vid,.container3 .lr-bg-wrapper-1 .vid,.container21 .lr-bg-wrapper-0 video,.container21 .lr-bg-wrapper-1 video{
     width: 800px;
     height: 450px;
     object-fit: cover;
@@ -383,29 +370,29 @@ export const clip = new HTMLClip({
     position: absolute;
   }
   .container4 .bg{
-    background:url(assets/girl-map.jpg);
+    background:url(https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-map.jpg?raw=true);
     background-size: cover;
   }
   .container5 .bg{
-    background:url(assets/girl-road.jpg);
+    background:url(https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-road.jpg?raw=true);
     background-size: cover;
   }
   .container23 .bg{
-    background:url(assets/friends-nature.png);
+    background:url(https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/friends-nature.png?raw=true);
     background-size: cover;
   }
   .container30 .bg{
-    background:url(assets/caravan-dog.png);
+    background:url(https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/caravan-dog.png?raw=true);
     background-size: cover;
   }
   .container33 .bg{
-    background:url(assets/girl-map.jpg);
+    background:url(https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-map.jpg?raw=true);
     background-size: cover;
   }
-  .container3 .lr-bg-wrapper-0 video,.container21 .lr-bg-wrapper-0 video{
+  .container3 .lr-bg-wrapper-0 .vid,.container21 .lr-bg-wrapper-0 video{
     left:400px;
   }
-  .container3 .lr-bg-wrapper-1 video,.container21 .lr-bg-wrapper-1 video{
+  .container3 .lr-bg-wrapper-1 .vid,.container21 .lr-bg-wrapper-1 video{
     right:400px;
   }
   .container4 .lr-bg-wrapper .bg-0{
@@ -440,7 +427,7 @@ export const clip = new HTMLClip({
     width:800px;
     height:450px;
     position:absolute;
-    background:url("assets/girl-flowers.png");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-flowers.png?raw=true");
     clip-path: polygon(100% 0, 100% 0, 0 100%, 0 100%);
   }
   .container24 .diag-0{
@@ -457,15 +444,15 @@ export const clip = new HTMLClip({
     position:absolute;
   }
   .container25 .lr-con{
-    background:url("assets/girl-guitar.png");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-guitar.png?raw=true");
     background-size: cover;
   }
   .container29 .lr-con{
-    background:url("assets/caravan-road.png");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/caravan-road.png?raw=true");
     background-size: cover;
   }
   .container37 .lr-con{
-    background:url("assets/mountain-breath.jpg");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/mountain-breath.jpg?raw=true");
     background-size: cover;
   }
   .l-con{
@@ -652,7 +639,7 @@ export const clip = new HTMLClip({
   },
   audioSources: [
     {
-      src: "assets/audio.mp3",
+      src: "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/audio.mp3",
       id: "audio",
       base64: false,
     },
@@ -668,8 +655,82 @@ const audioPlayback = new AudioPlayback(
     duration: 22500,
   }
 );
-
 clip.addIncident(audioPlayback, 0);
+
+//videos
+const video1 = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/boots.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container1",
+  }
+);
+const playback1 = new VideoPlugin.Playback({
+  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
+  duration: 1500, // the duration of the playback in milliseconds
+});
+
+clip.addIncident(video1,0);
+video1.addIncident(playback1,0);
+
+const video2 = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-car.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container2",
+  }
+);
+const playback2 = new VideoPlugin.Playback({
+  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
+  duration: 1500, // the duration of the playback in milliseconds
+});
+
+clip.addIncident(video2,1000);
+video2.addIncident(playback2,0);
+
+const video3a = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/clothes.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container3 .lr-bg-wrapper-0 .vid",
+  }
+);
+const playback3 = new VideoPlugin.Playback({
+  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
+  duration: 1500, // the duration of the playback in milliseconds
+});
+const video3b = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/clothes.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container3 .lr-bg-wrapper-1 .vid",
+  }
+);
+clip.addIncident(video3a,3000);
+video3a.addIncident(playback3,0);
+clip.addIncident(video3b,3000);
+video3b.addIncident(playback3,0);
+
 const container1appear = new CSSEffect(
   {
     animatedAttrs: {
@@ -722,7 +783,7 @@ const container2remove = container1remove.clone(
 const container3appear = container1appear.clone(
   {},
   {
-    selector: ".container3 .lr-bg-wrapper-0 video,.container3 .lr-bg-wrapper-1 video",
+    selector: ".container3 .lr-bg-wrapper-0 .vid,.container3 .lr-bg-wrapper-1 .vid",
   }
 );
 const container3removebg0 = new CSSEffect(
@@ -732,7 +793,7 @@ const container3removebg0 = new CSSEffect(
     },
   },
   {
-    selector: ".container3 .lr-bg-wrapper-0 video",
+    selector: ".container3 .lr-bg-wrapper-0 .vid",
     duration: 300,
     easing: "easeInCubic",
   }
@@ -744,7 +805,7 @@ const container3removebg1 = new CSSEffect(
     },
   },
   {
-    selector: ".container3 .lr-bg-wrapper-1 video",
+    selector: ".container3 .lr-bg-wrapper-1 .vid",
     duration: 300,
     easing: "easeInCubic",
   }

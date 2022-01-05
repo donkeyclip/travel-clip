@@ -29,7 +29,8 @@
     }
   },
   "dependencies": {
-    "@donkeyclip/motorcortex": "7.6.6"
+    "@donkeyclip/motorcortex": "7.6.6",
+    "@kissmybutton/motorcortex-video": "^1.2.1"
   },
   "devDependencies": {
     "@babel/core": "7.16.5",
