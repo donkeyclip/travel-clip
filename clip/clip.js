@@ -39,107 +39,58 @@ export const clip = new HTMLClip({
     </div></div>
     </div>
   </div>
-  <div class="container6">
-      <video autoplay muted>
-        <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-camera.mp4?raw=true" type="video/mp4">
-      </video>
-    </div>
-    <div class="container7">
-    <video autoplay muted>
-      <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-car.mp4?raw=true" type="video/mp4">
-    </video>
-  </div>
+  <div class="container6"></div>
+    <div class="container7"></div>
   <div class="text2 mask">
       <div class="title">{{ initParams.title2 }}</div>
       <div class="subtitle">{{ initParams.subtitle2 }}</div>
   </div>
   <div class="container8"></div>
-<div class="container9">
-<video autoplay muted>
-  <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-caravan.mp4?raw=true" type="video/mp4">
-</video>
-</div>
-<div class="container10">
-<video autoplay muted>
-  <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/travel-with-friends.mp4?raw=true" type="video/mp4">
-</video>
-</div>
+<div class="container9"></div>
+<div class="container10"></div>
 <div class="container11"></div>
-<div class="container12">
-<video autoplay muted>
-  <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/ballons.mp4?raw=true" type="video/mp4">
-</video>
-</div>
+<div class="container12"></div>
 <div class="container13"></div>
 <div class="text3">{{ initParams.text3}}</div>
 <div class="container14"></div>
 <div class="container15"></div>
 <div class="container16">
-<video autoplay muted>
-  <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/map.mp4?raw=true" type="video/mp4">
-</video>
-<div class="borderText text4">
-<div id="root">
-  <div class="looper" mc-for="key,item" mc-of="initParams.text4">
-      <span>{{ item }}</span>
+  <div class="borderText text4">
+    <div id="root">
+      <div class="looper" mc-for="key,item" mc-of="initParams.text4">
+          <span>{{ item }}</span>
+      </div>
+    </div>
   </div>
-</div>
-</div>
 </div>
 <div class="container17"></div>
-<div class="container18">
-<video autoplay muted>
-  <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-road.mp4?raw=true" type="video/mp4">
-</video>
-</div>
+<div class="container18"></div>
 <div class="borderText text4 mask">
-<div id="root">
-  <div class="looper" mc-for="key,item" mc-of="initParams.text4">
-      <span>{{ item }}</span>
+  <div id="root">
+    <div class="looper" mc-for="key,item" mc-of="initParams.text4">
+        <span>{{ item }}</span>
+    </div>
   </div>
-</div>
 </div>
 <div class="container19"></div>
 <div class="container21">
-      <div class="lr-bg-wrapper lr-bg-wrapper-0">
-        <video autoplay muted>
-          <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-with-map-car.mp4?raw=true" type="video/mp4">
-        </video>
-      </div>
-      <div class="lr-bg-wrapper lr-bg-wrapper-1">
-        <video autoplay muted >
-          <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-with-map-car.mp4?raw=true" type="video/mp4">
-        </video>
-      </div>
+      <div class="lr-bg-wrapper lr-bg-wrapper-0"><div class="vid"></div></div>
+      <div class="lr-bg-wrapper lr-bg-wrapper-1"><div class="vid"></div></div>
 </div>
 <div class="container20">
-      <div class="lr-wrapper-0">
-        <video autoplay muted >
-          <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-caravan.mp4?raw=true" type="video/mp4">
-        </video>
-      </div>
-      <div class="lr-wrapper-1">
-        <video autoplay muted>
-          <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-caravan.mp4?raw=true" type="video/mp4">
-        </video>
-      </div>
+      <div class="lr-wrapper-0"><div class="vid"></div></div>
+      <div class="lr-wrapper-1"><div class="vid"></div></div>
 </div>
 <div class="container22">
   <div class="lr-bg-wrapper lr-bg-wrapper-0">
-  <div class="bg bg-0">
-  <video autoplay muted>
-  <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-with-map-car.mp4?raw=true" type="video/mp4">
-</video>
-<div class="title5a">{{initParams.title5a}}</div>
-</div>
+    <div class="bg bg-0">
+      <div class="title5a">{{initParams.title5a}}</div>
+    </div>
   </div>
   <div class="lr-bg-wrapper lr-bg-wrapper-1">
-  <div class="bg bg-1">
-  <video autoplay muted>
-    <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-with-map-car.mp4?raw=true" type="video/mp4">
-  </video>
-  <div class="title5b">{{initParams.title5b}}</div>
-  </div>
+    <div class="bg bg-1">
+      <div class="title5b">{{initParams.title5b}}</div>
+    </div>
   </div>
 </div>
 <div class="container23">
@@ -196,30 +147,16 @@ export const clip = new HTMLClip({
   <div class="bg half-r"></div>
 </div>
 <div class="container34">
-  <div class="lr-con l-con">
-    <video autoplay muted>
-      <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-camera.mp4?raw=true" type="video/mp4">
-    </video>
+  <div class="lr-con l-con"><div class="vid"></div>
     <div class="text8 text8left">{{initParams.text8}}</div>
   </div>
-  <div class="lr-con r-con">
-    <video autoplay muted>
-      <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-camera.mp4?raw=true" type="video/mp4">
-    </video>
+  <div class="lr-con r-con"><div class="vid"></div>
     <div class="text8 text8right">{{initParams.text8}}</div>
   </div>
 </div>
-<div class="container35">
-<video autoplay muted>
-  <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-road.mp4?raw=true" type="video/mp4">
-</video>
-</div>
+<div class="container35"></div>
 <div class="text8 mask">{{initParams.text8}}</div>
-<div class="container36">
-<video autoplay muted>
-  <source src="https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/travel-with-friends.mp4?raw=true" type="video/mp4">
-</video>
-</div>
+<div class="container36"></div>
 <div class="container37">
   <div class="lr-con l-con"></div>
   <div class="lr-con r-con"></div>
@@ -293,11 +230,11 @@ export const clip = new HTMLClip({
     background-size: cover;
   }
   .container17{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/mountain-breath.jpg?raw=true");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/mountain-breath.jpeg?raw=true");
     background-size: cover;
   }
   .container19{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/photo.jpg?raw=true");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/photo.jpeg?raw=true");
     background-size: cover;
   }
   .container26{
@@ -305,20 +242,20 @@ export const clip = new HTMLClip({
     background-size: cover;
   }
   .container27{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/caravan-friends.jpg?raw=true");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/caravan-friends.jpeg?raw=true");
     background-size: cover;
   }
   .container28{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/photo.jpg?raw=true");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/photo.jpeg?raw=true");
     background-size: cover;
   }
   .container31{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/road-trip.jpg?raw=true");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/road-trip.jpeg?raw=true");
     background-size: cover;
     clip-path: polygon(0 0, 0 0, 0 0, 0 0, 0 0);
   }
   .container32{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/friends.jpg?raw=true");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/friends.jpeg?raw=true");
     background-size: cover;
     clip-path: polygon(0 0, 0 0, 0 0, 0 0, 0 0);
   }
@@ -341,27 +278,27 @@ export const clip = new HTMLClip({
   .ud-bg-wrapper-1{
     top: 225px;
   }
-  .container3 .lr-bg-wrapper-0 .vid,.container3 .lr-bg-wrapper-1 .vid,.container21 .lr-bg-wrapper-0 video,.container21 .lr-bg-wrapper-1 video{
+  .container3 .lr-bg-wrapper-0 .vid,.container3 .lr-bg-wrapper-1 .vid,.container21 .lr-bg-wrapper-0 .vid,.container21 .lr-bg-wrapper-1 .vid{
     width: 800px;
     height: 450px;
     object-fit: cover;
     position: absolute;
     top:100%;
   }
-  .container20 .lr-wrapper-0 video,.container20 .lr-wrapper-1 video{
+  .container20 .lr-wrapper-0 .vid,.container20 .lr-wrapper-1 .vid{
     width: 800px;
     height: 450px;
     object-fit: cover;
     position: absolute;
     top:-100%;
   }
-  .container20 .lr-wrapper-0 video{
+  .container20 .lr-wrapper-0 .vid{
     clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
   }
-  .container20 .lr-wrapper-1 video{
+  .container20 .lr-wrapper-1 .vid{
     clip-path: polygon(100% 0, 50% 0, 50% 100%, 100% 100%);
   }
-  .container34 video{
+  .container34 .vid{
     position: absolute;
   }
   .bg{
@@ -370,11 +307,11 @@ export const clip = new HTMLClip({
     position: absolute;
   }
   .container4 .bg{
-    background:url(https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-map.jpg?raw=true);
+    background:url(https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-map.jpeg?raw=true);
     background-size: cover;
   }
   .container5 .bg{
-    background:url(https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-road.jpg?raw=true);
+    background:url(https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-road.jpeg?raw=true);
     background-size: cover;
   }
   .container23 .bg{
@@ -386,13 +323,13 @@ export const clip = new HTMLClip({
     background-size: cover;
   }
   .container33 .bg{
-    background:url(https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-map.jpg?raw=true);
+    background:url(https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-map.jpeg?raw=true);
     background-size: cover;
   }
-  .container3 .lr-bg-wrapper-0 .vid,.container21 .lr-bg-wrapper-0 video{
+  .container3 .lr-bg-wrapper-0 .vid,.container21 .lr-bg-wrapper-0 .vid{
     left:400px;
   }
-  .container3 .lr-bg-wrapper-1 .vid,.container21 .lr-bg-wrapper-1 video{
+  .container3 .lr-bg-wrapper-1 .vid,.container21 .lr-bg-wrapper-1 .vid{
     right:400px;
   }
   .container4 .lr-bg-wrapper .bg-0{
@@ -452,7 +389,7 @@ export const clip = new HTMLClip({
     background-size: cover;
   }
   .container37 .lr-con{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/mountain-breath.jpg?raw=true");
+    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/mountain-breath.jpeg?raw=true");
     background-size: cover;
   }
   .l-con{
@@ -469,7 +406,7 @@ export const clip = new HTMLClip({
     left:400px;
     clip-path: polygon(100% 0, 90% 0, 90% 100%, 100% 100%);
   }
-  video{
+  .vid{
     object-fit: cover;
     width:800px;
     height:450px;
@@ -606,16 +543,12 @@ export const clip = new HTMLClip({
   position:absolute;
   top:50%;
   transform:translateY(-50%);
-
   background: white;
   color: black;
   mix-blend-mode: screen;
-
   font-size:27px;
   letter-spacing:10px;
   padding:2px 0px 0px 10px;
-
-  
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight:900;
 }
@@ -657,7 +590,7 @@ const audioPlayback = new AudioPlayback(
 );
 clip.addIncident(audioPlayback, 0);
 
-//videos
+//video
 const video1 = new VideoPlugin.Clip(
   {
     sources: [
@@ -710,7 +643,7 @@ const video3a = new VideoPlugin.Clip(
     selector: ".container3 .lr-bg-wrapper-0 .vid",
   }
 );
-const playback3 = new VideoPlugin.Playback({
+const playback3a = new VideoPlugin.Playback({
   selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
   duration: 1500, // the duration of the playback in milliseconds
 });
@@ -726,10 +659,334 @@ const video3b = new VideoPlugin.Clip(
     selector: ".container3 .lr-bg-wrapper-1 .vid",
   }
 );
+const playback3b = playback3a.clone({});
+
 clip.addIncident(video3a,3000);
-video3a.addIncident(playback3,0);
+video3a.addIncident(playback3a,0);
 clip.addIncident(video3b,3000);
-video3b.addIncident(playback3,0);
+video3b.addIncident(playback3b,0);
+
+const video6 = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-camera.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container6",
+  }
+);
+const playback6 = new VideoPlugin.Playback({
+  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
+  duration: 1500, // the duration of the playback in milliseconds
+});
+
+clip.addIncident(video6,4200);
+video6.addIncident(playback6,0);
+
+const video7 = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-car.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container7",
+  }
+);
+const playback7 = new VideoPlugin.Playback({
+  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
+  duration: 1500, // the duration of the playback in milliseconds
+});
+
+clip.addIncident(video7,4470);
+video7.addIncident(playback7,0);
+
+const video9 = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-caravan.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container9",
+  }
+);
+const playback9 = new VideoPlugin.Playback({
+  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
+  duration: 1500, // the duration of the playback in milliseconds
+});
+
+clip.addIncident(video9,5070);
+video9.addIncident(playback9,0);
+
+const video10 = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/travel-with-friends.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container10",
+  }
+);
+const playback10 = new VideoPlugin.Playback({
+  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
+  duration: 1500, // the duration of the playback in milliseconds
+});
+
+clip.addIncident(video10,5370);
+video10.addIncident(playback10,0);
+
+const video12 = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/ballons.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container12",
+  }
+);
+const playback12 = new VideoPlugin.Playback({
+  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
+  duration: 1000, // the duration of the playback in milliseconds
+});
+
+clip.addIncident(video12,6000);
+video12.addIncident(playback12,0);
+
+const video16 = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/map.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container16",
+  }
+);
+const playback16 = new VideoPlugin.Playback({
+  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
+  duration: 1000, // the duration of the playback in milliseconds
+});
+
+clip.addIncident(video16,8900);
+video16.addIncident(playback16,0);
+
+const video18 = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-road.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container18",
+  }
+);
+const playback18 = new VideoPlugin.Playback({
+  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
+  duration: 1500, // the duration of the playback in milliseconds
+});
+
+clip.addIncident(video18,10200);
+video18.addIncident(playback18,0);
+
+const video21a = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-with-map-car.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container21 .lr-bg-wrapper-0 .vid",
+  }
+);
+const playback21a = new VideoPlugin.Playback({
+  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
+  duration: 800, // the duration of the playback in milliseconds
+});
+
+clip.addIncident(video21a,12300);
+video21a.addIncident(playback21a,0);
+const video21b = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-with-map-car.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container21 .lr-bg-wrapper-1 .vid",
+  }
+);
+const playback21b = playback21a.clone({});
+clip.addIncident(video21b,12300);
+video21b.addIncident(playback21b,0);
+
+const video20a = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-caravan.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container20 .lr-wrapper-0 .vid",
+  }
+);
+const playback20a = new VideoPlugin.Playback({
+  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
+  duration: 1200, // the duration of the playback in milliseconds
+});
+
+clip.addIncident(video20a,11900);
+video20a.addIncident(playback20a,0);
+const video20b = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-caravan.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container20 .lr-wrapper-1 .vid",
+  }
+);
+const playback20b = playback20a.clone({});
+
+clip.addIncident(video20b,11900);
+video20b.addIncident(playback20b,0);
+
+const video22a = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-with-map-car.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container22 .bg-0",
+  }
+);
+const playback22a = new VideoPlugin.Playback({
+  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
+  duration: 1900, // the duration of the playback in milliseconds
+});
+
+clip.addIncident(video22a,12600);
+video22a.addIncident(playback22a,0);
+const video22b = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-with-map-car.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container22 .bg-1",
+  }
+);
+const playback22b = playback22a.clone({});
+
+clip.addIncident(video22b,12600);
+video22b.addIncident(playback22b,0);
+
+const video34a = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-camera.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container34 .l-con",
+  }
+);
+const playback34a = new VideoPlugin.Playback({
+  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
+  duration: 1400, // the duration of the playback in milliseconds
+});
+
+clip.addIncident(video34a,19900);
+video34a.addIncident(playback34a,0);
+const video34b = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-camera.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container34 .r-con",
+  }
+);
+const playback34b = playback34a.clone({});
+
+clip.addIncident(video34b,19900);
+video34b.addIncident(playback34b,0);
+
+const video35 = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-road.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container35",
+  }
+);
+const playback35 = new VideoPlugin.Playback({
+  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
+  duration: 900, // the duration of the playback in milliseconds
+});
+
+clip.addIncident(video35,20950);
+video35.addIncident(playback35,0);
+const video36 = new VideoPlugin.Clip(
+  {
+    sources: [
+      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/travel-with-friends.mp4?raw=true"
+    ],
+    width: 800,
+    height: 450,
+  },
+  {
+    selector: ".container36",
+  }
+);
+const playback36 = new VideoPlugin.Playback({
+  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
+  duration: 1500, // the duration of the playback in milliseconds
+});
+
+clip.addIncident(video36,21500);
+video36.addIncident(playback36,0);
 
 const container1appear = new CSSEffect(
   {
@@ -1129,7 +1386,7 @@ const container19remove = container16remove.clone(
 const container20appear = container1appear.clone(
   {},
   {
-    selector: ".container20 .lr-wrapper-0 video,.container20 .lr-wrapper-1 video",
+    selector: ".container20 .lr-wrapper-0 .vid,.container20 .lr-wrapper-1 .vid",
     duration:400,
     easing: "easeInOutQuad"
   }
@@ -1142,7 +1399,7 @@ const container20removebg0 = new CSSEffect(
     },
   },
   {
-    selector: ".container20 .lr-wrapper-0 video",
+    selector: ".container20 .lr-wrapper-0 .vid",
     duration:400,
     easing: "easeInOutQuad",
   }
@@ -1154,16 +1411,16 @@ const container20removebg1 = new CSSEffect(
     },
   },
   {
-    selector: ".container20 .lr-wrapper-1 video",
+    selector: ".container20 .lr-wrapper-1 .vid",
     duration:400,
     easing: "easeInOutQuad",
   }
 );
-//container21 (background for container22 same video)
+//container21 (background for container22 same .vid)
 const container21appear = container3appear.clone(
 {},
 {
-  selector: ".container21 .lr-bg-wrapper-0 video,.container21 .lr-bg-wrapper-1 video",
+  selector: ".container21 .lr-bg-wrapper-0 .vid,.container21 .lr-bg-wrapper-1 .vid",
   duration:1
 }
 );
@@ -1572,12 +1829,9 @@ clip.addIncident(container10change3, 5800);
 //h teleytaia diagonia
 clip.addIncident(container11appear, 5670);
 
-//
 clip.addIncident(container12appear, 6000);
 clip.addIncident(text3appear, 6000);
-// clip.addIncident(container12remove, 6800);
 clip.addIncident(container13appear, 6700);
-// clip.addIncident(container13remove, 8100);
 
 clip.addIncident(container14appear, 7400);
 clip.addIncident(container14remove, 8900);
