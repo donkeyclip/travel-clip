@@ -570,25 +570,8 @@ export const clip = new HTMLClip({
     width: "800px",
     height: "450px",
   },
-  audioSources: [
-    {
-      src: "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/audio.mp3",
-      id: "audio",
-      base64: false,
-    },
-  ],
   initParams: initParams[0].value,
 });
-
-const audioPlayback = new AudioPlayback(
-  {},
-  {
-    selector: "~#audio",
-    startFrom: 0,
-    duration: 22500,
-  }
-);
-clip.addIncident(audioPlayback, 0);
 
 //video
 const video1 = new VideoPlugin.Clip(
