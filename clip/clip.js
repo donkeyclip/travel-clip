@@ -627,9 +627,9 @@ const video3b = new VideoPlugin.Clip(
 );
 const playback3b = playback3a.clone({});
 
-clip.addIncident(video3a,3000);
+clip.addIncident(video3a,2000);
 video3a.addIncident(playback3a,0);
-clip.addIncident(video3b,3000);
+clip.addIncident(video3b,2000);
 video3b.addIncident(playback3b,0);
 
 const video6 = new VideoPlugin.Clip(
