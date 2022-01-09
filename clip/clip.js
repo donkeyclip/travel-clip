@@ -168,7 +168,7 @@ export const clip = new HTMLClip({
     width:800px;
     height:450px;
     position:relative;
-    background:white;
+    background:{{initParams.backgroundColor}};
   }
   .container1,.container2{
     width:800px;
@@ -213,49 +213,65 @@ export const clip = new HTMLClip({
     height:450px;
     position:absolute;
   }
+  .container4 .bg,.container33 .bg{
+    background:url({{initParams.img4_33}});
+    background-size: cover;
+  }
+  .container5 .bg{
+    background:url({{initParams.img5}});
+    background-size: cover;
+  }
   .container8,.container11{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-mountain.png?raw=true");
+    background:url({{initParams.img8_11}});
     background-size: cover;
   }
   .container13{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/friends-road.png?raw=true");
+    background:url({{initParams.img13}});
     background-size: cover;
   }
   .container14{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/inside-caravan.png?raw=true");
+    background:url({{initParams.img14}});
     background-size: cover;
   }
-  .container15{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/caravan-dog.png?raw=true");
+  .container15,.container30 .bg{
+    background:url({{initParams.img15_30}});
     background-size: cover;
   }
-  .container17{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/mountain-breath.jpeg?raw=true");
+  .container17,.container37 .lr-con{
+    background:url({{initParams.img17_37}});
     background-size: cover;
   }
-  .container19{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/photo.jpeg?raw=true");
+  .container19,.container28{
+    background:url({{initParams.img19_28}});
+    background-size: cover;
+  }
+  .container23 .bg{
+    background:url({{initParams.img23}});
+    background-size: cover;
+  }
+  .container25 .lr-con{
+    background:url({{initParams.img25}});
     background-size: cover;
   }
   .container26{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/fire.png?raw=true");
+    background:url({{initParams.img26}});
     background-size: cover;
   }
   .container27{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/caravan-friends.jpeg?raw=true");
+    background:url({{initParams.img27}});
     background-size: cover;
   }
-  .container28{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/photo.jpeg?raw=true");
+  .container29 .lr-con{
+    background:url({{initParams.img29}});
     background-size: cover;
   }
   .container31{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/road-trip.jpeg?raw=true");
+    background:url({{initParams.img31}});
     background-size: cover;
     clip-path: polygon(0 0, 0 0, 0 0, 0 0, 0 0);
   }
   .container32{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/friends.jpeg?raw=true");
+    background:url({{initParams.img32}});
     background-size: cover;
     clip-path: polygon(0 0, 0 0, 0 0, 0 0, 0 0);
   }
@@ -306,26 +322,6 @@ export const clip = new HTMLClip({
     height: 450px;
     position: absolute;
   }
-  .container4 .bg{
-    background:url(https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-map.jpeg?raw=true);
-    background-size: cover;
-  }
-  .container5 .bg{
-    background:url(https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-road.jpeg?raw=true);
-    background-size: cover;
-  }
-  .container23 .bg{
-    background:url(https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/friends-nature.png?raw=true);
-    background-size: cover;
-  }
-  .container30 .bg{
-    background:url(https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/caravan-dog.png?raw=true);
-    background-size: cover;
-  }
-  .container33 .bg{
-    background:url(https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-map.jpeg?raw=true);
-    background-size: cover;
-  }
   .container3 .lr-bg-wrapper-0 .vid,.container21 .lr-bg-wrapper-0 .vid{
     left:400px;
   }
@@ -364,7 +360,7 @@ export const clip = new HTMLClip({
     width:800px;
     height:450px;
     position:absolute;
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-flowers.png?raw=true");
+    background:url({{initParams.img24}});
     clip-path: polygon(100% 0, 100% 0, 0 100%, 0 100%);
   }
   .container24 .diag-0{
@@ -373,24 +369,11 @@ export const clip = new HTMLClip({
   .container24 .diag-1{
     background-size: contain;
     background-position:50px 30px;
-  
   }
   .lr-con{
     width:800px;
     height:450px;
     position:absolute;
-  }
-  .container25 .lr-con{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-guitar.png?raw=true");
-    background-size: cover;
-  }
-  .container29 .lr-con{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/caravan-road.png?raw=true");
-    background-size: cover;
-  }
-  .container37 .lr-con{
-    background:url("https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/mountain-breath.jpeg?raw=true");
-    background-size: cover;
   }
   .l-con{
     clip-path: polygon(13% 0, 13% 0, 13% 100%, 13% 100%);
@@ -419,7 +402,7 @@ export const clip = new HTMLClip({
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight:bold;
     text-align:center;
-    color:white;
+    color:{{initParams.colorText}};
   }
   .text1 .title{
     letter-spacing: 30px;
@@ -437,7 +420,7 @@ export const clip = new HTMLClip({
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight:bold;
   text-align:center;
-  color:white;
+  color:{{initParams.colorText}};
  }
  .text2 .title{
   letter-spacing: 30px;
@@ -454,11 +437,11 @@ export const clip = new HTMLClip({
   transform:translate(-50%,-50%);
   font-family: 'Source Sans Pro', sans-serif;
   text-align:center;
-  color:white;
+  color:{{initParams.colorText}};
   font-size:20px;
   font-weight:900;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  border-top: 2px solid {{initParams.colorText}};
+  border-bottom: 2px solid {{initParams.colorText}};
   letter-spacing: 7px;
  }
  .borderText{
@@ -469,7 +452,7 @@ export const clip = new HTMLClip({
   top:80%;
   left:50%;
   transform:translate(-50%,-50%);
-  color:white;
+  color:{{initParams.colorText}};
   font-size:20px;
   background: rgba(102, 107, 115,0.3);
   text-align:center;
@@ -489,7 +472,7 @@ export const clip = new HTMLClip({
   right:50%;
   transform:translateY(-50%);
   font-family: 'Source Sans Pro', sans-serif;
-  color:white;
+  color:{{initParams.colorText}};
   font-size:20px;
   font-weight:200;
 }
@@ -499,7 +482,7 @@ export const clip = new HTMLClip({
   left:51%;
   transform:translateY(-50%);
   font-family: 'Source Sans Pro', sans-serif;
-  color:white;
+  color:{{initParams.colorText}};
   font-size:20px;
   font-weight:900;
 }
@@ -522,11 +505,11 @@ export const clip = new HTMLClip({
   transform:translateY(-50%);
   font-family: 'Yanone Kaffeesatz', sans-serif;
   letter-spacing:7px;
-  color:white;
+  color:{{initParams.colorText}};
   font-size:27px;
   font-weight:300;
   padding-left:7px;
-  border-bottom:2px solid white;
+  border-bottom:2px solid {{initParams.colorText}};
  }
  .text7left{
    left:20%;
@@ -543,7 +526,7 @@ export const clip = new HTMLClip({
   position:absolute;
   top:50%;
   transform:translateY(-50%);
-  background: white;
+  background: {{initParams.colorText}};
   color: black;
   mix-blend-mode: screen;
   font-size:27px;
