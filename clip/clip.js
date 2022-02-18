@@ -1,4 +1,4 @@
-import { HTMLClip, CSSEffect, AudioPlayback } from "@donkeyclip/motorcortex";
+import { HTMLClip, CSSEffect, AudioPlayback,Group,AudioEffect } from "@donkeyclip/motorcortex";
 import initParams from "./initParams";
 import MotorCortex from "@donkeyclip/motorcortex";
 import MCVideo from "@kissmybutton/motorcortex-video";
@@ -554,7 +554,37 @@ export const clip = new HTMLClip({
     height: "450px",
   },
   initParams: initParams[0].value,
+  audioSources: [
+    {
+      src: "./my.mp3",
+      id: "my-mp3",
+      classes: ["songs", "rock"],
+      base64: false,
+    },
+  ],
 });
+
+const songPlayback = new AudioPlayback({
+  selector: "~#my-mp3",
+  startFrom: 0,
+  duration: 28900,
+});
+
+clip.addIncident(songPlayback, 0);
+
+const effect = new AudioEffect(
+  {
+    animatedAttrs: {
+      gain: 0,
+    },
+  },
+  {
+    selector: "~#my-mp3",
+    duration: 1000,
+  }
+);
+
+clip.addIncident(effect, 27500);
 
 //video
 const video1 = new VideoPlugin.Clip(
@@ -1761,104 +1791,110 @@ const container37appearbg1 = container25appearbg1.clone(
     selector:".container37 .r-con"
   }
 );
-clip.addIncident(container1appear, 0);
-clip.addIncident(text1appear, 0);
-clip.addIncident(container1remove, 1000);
-clip.addIncident(container2appear, 1000);
-clip.addIncident(container2remove, 2000);
-clip.addIncident(container3appear, 2000);
-clip.addIncident(container3removebg0, 3000);
-clip.addIncident(container3removebg1, 3000);
-clip.addIncident(container4appear, 3000);
-clip.addIncident(container5appear, 3600);
-clip.addIncident(text2appear, 3900);
 
-clip.addIncident(container6appear, 4200);
-clip.addIncident(container6change1, 4500);
-clip.addIncident(container6change3, 4600);
 
-clip.addIncident(container7appear, 4470);
-clip.addIncident(container7change1, 4800);
-clip.addIncident(container7change3, 4900);
+const myGroup = new Group();
 
-clip.addIncident(container8appear, 4770);
-clip.addIncident(container8change1, 5100);
-clip.addIncident(container8change3, 5200);
+myGroup.addIncident(container1appear, 0);
+myGroup.addIncident(text1appear, 0);
+myGroup.addIncident(container1remove, 1000);
+myGroup.addIncident(container2appear, 1000);
+myGroup.addIncident(container2remove, 2000);
+myGroup.addIncident(container3appear, 2000);
+myGroup.addIncident(container3removebg0, 3000);
+myGroup.addIncident(container3removebg1, 3000);
+myGroup.addIncident(container4appear, 3000);
+myGroup.addIncident(container5appear, 3600);
+myGroup.addIncident(text2appear, 3900);
 
-clip.addIncident(container9appear, 5070);
-clip.addIncident(container9change1, 5400);
-clip.addIncident(container9change3, 5500);
+myGroup.addIncident(container6appear, 4200);
+myGroup.addIncident(container6change1, 4500);
+myGroup.addIncident(container6change3, 4600);
 
-clip.addIncident(container10appear, 5370);
-clip.addIncident(container10change1, 5700);
-clip.addIncident(container10change3, 5800);
+myGroup.addIncident(container7appear, 4470);
+myGroup.addIncident(container7change1, 4800);
+myGroup.addIncident(container7change3, 4900);
+
+myGroup.addIncident(container8appear, 4770);
+myGroup.addIncident(container8change1, 5100);
+myGroup.addIncident(container8change3, 5200);
+
+myGroup.addIncident(container9appear, 5070);
+myGroup.addIncident(container9change1, 5400);
+myGroup.addIncident(container9change3, 5500);
+
+myGroup.addIncident(container10appear, 5370);
+myGroup.addIncident(container10change1, 5700);
+myGroup.addIncident(container10change3, 5800);
 //h teleytaia diagonia
-clip.addIncident(container11appear, 5670);
+myGroup.addIncident(container11appear, 5670);
 
-clip.addIncident(container12appear, 6000);
-clip.addIncident(text3appear, 6000);
-clip.addIncident(container13appear, 6700);
+myGroup.addIncident(container12appear, 6000);
+myGroup.addIncident(text3appear, 6000);
+myGroup.addIncident(container13appear, 6700);
 
-clip.addIncident(container14appear, 7400);
-clip.addIncident(container14remove, 8900);
+myGroup.addIncident(container14appear, 7400);
+myGroup.addIncident(container14remove, 8900);
 
-clip.addIncident(container15appear, 8100);
+myGroup.addIncident(container15appear, 8100);
 
-clip.addIncident(container16appear, 8900);
-clip.addIncident(text4move, 8900);
-clip.addIncident(text4mask, 9200);
-clip.addIncident(text4bgremove, 9201);
-clip.addIncident(container16remove, 9300);
-clip.addIncident(container17appear, 9300);
-clip.addIncident(container17remove, 10200);
-clip.addIncident(container18appear, 10200);
-clip.addIncident(container18remove, 11100);
-clip.addIncident(container19appear, 11100);
-clip.addIncident(container19remove, 12000);
-clip.addIncident(container20appear, 11900);
-clip.addIncident(container21appear, 12300);
-clip.addIncident(container20removebg0, 12600);
-clip.addIncident(container20removebg1, 12600);
-clip.addIncident(container22appearbg0, 12600);
-clip.addIncident(container22appearbg1, 12600);
-clip.addIncident(text5mask, 13000);
-clip.addIncident(container23appearbg0,14000);
-clip.addIncident(container23appearbg1,14000);
-clip.addIncident(container24appearbg0, 15500); 
-clip.addIncident(container24appearbg1, 15500);
-clip.addIncident(container25appearbg0, 15800);
-clip.addIncident(container25appearbg1, 15800);
+myGroup.addIncident(container16appear, 8900);
+myGroup.addIncident(text4move, 8900);
+myGroup.addIncident(text4mask, 9200);
+myGroup.addIncident(text4bgremove, 9201);
+myGroup.addIncident(container16remove, 9300);
+myGroup.addIncident(container17appear, 9300);
+myGroup.addIncident(container17remove, 10200);
+myGroup.addIncident(container18appear, 10200);
+myGroup.addIncident(container18remove, 11100);
+myGroup.addIncident(container19appear, 11100);
+myGroup.addIncident(container19remove, 12000);
+myGroup.addIncident(container20appear, 11900);
+myGroup.addIncident(container21appear, 12300);
+myGroup.addIncident(container20removebg0, 12600);
+myGroup.addIncident(container20removebg1, 12600);
+myGroup.addIncident(container22appearbg0, 12600);
+myGroup.addIncident(container22appearbg1, 12600);
+myGroup.addIncident(text5mask, 13000);
+myGroup.addIncident(container23appearbg0,14000);
+myGroup.addIncident(container23appearbg1,14000);
+myGroup.addIncident(container24appearbg0, 15500); 
+myGroup.addIncident(container24appearbg1, 15500);
+myGroup.addIncident(container25appearbg0, 15800);
+myGroup.addIncident(container25appearbg1, 15800);
 
-clip.addIncident(container26appear, 16200);
-clip.addIncident(text6move, 16200);
-clip.addIncident(text6mask, 16500);
-clip.addIncident(text6bgremove, 16501);
-clip.addIncident(container27appear, 16900);
-clip.addIncident(container28appear, 17300);
-clip.addIncident(container29appearbg0, 17500);
-clip.addIncident(container29appearbg1, 17500);
-clip.addIncident(container30appearbg0, 17900);
-clip.addIncident(container30appearbg1, 17900);
-clip.addIncident(text7left, 17900);
-clip.addIncident(text7right, 17900);
-clip.addIncident(text7mask, 18250);
-clip.addIncident(text7lrremove, 18251);
+myGroup.addIncident(container26appear, 16200);
+myGroup.addIncident(text6move, 16200);
+myGroup.addIncident(text6mask, 16500);
+myGroup.addIncident(text6bgremove, 16501);
+myGroup.addIncident(container27appear, 16900);
+myGroup.addIncident(container28appear, 17300);
+myGroup.addIncident(container29appearbg0, 17500);
+myGroup.addIncident(container29appearbg1, 17500);
+myGroup.addIncident(container30appearbg0, 17900);
+myGroup.addIncident(container30appearbg1, 17900);
+myGroup.addIncident(text7left, 17900);
+myGroup.addIncident(text7right, 17900);
+myGroup.addIncident(text7mask, 18250);
+myGroup.addIncident(text7lrremove, 18251);
 
-clip.addIncident(container31appear, 18400);
-clip.addIncident(container31change, 18900);
-clip.addIncident(container32appear, 19200);
-clip.addIncident(container32change, 19600);
-clip.addIncident(container33appearbg0, 19600);
-clip.addIncident(container33appearbg1, 19600);
+myGroup.addIncident(container31appear, 18400);
+myGroup.addIncident(container31change, 18900);
+myGroup.addIncident(container32appear, 19200);
+myGroup.addIncident(container32change, 19600);
+myGroup.addIncident(container33appearbg0, 19600);
+myGroup.addIncident(container33appearbg1, 19600);
 
-clip.addIncident(container34appearbg0, 19900);
-clip.addIncident(container34appearbg1, 19900);
-clip.addIncident(text8left, 19900);
-clip.addIncident(text8right, 19900);
-clip.addIncident(text8mask, 20250);
-clip.addIncident(text8lrremove, 20251);
+myGroup.addIncident(container34appearbg0, 19900);
+myGroup.addIncident(container34appearbg1, 19900);
+myGroup.addIncident(text8left, 19900);
+myGroup.addIncident(text8right, 19900);
+myGroup.addIncident(text8mask, 20250);
+myGroup.addIncident(text8lrremove, 20251);
 
-clip.addIncident(container35appear, 20950); 
-clip.addIncident(container36appear, 21500);
-clip.addIncident(container37appearbg0, 22500);
-clip.addIncident(container37appearbg1, 22500);
+myGroup.addIncident(container35appear, 20950); 
+myGroup.addIncident(container36appear, 21500);
+myGroup.addIncident(container37appearbg0, 22500);
+myGroup.addIncident(container37appearbg1, 22500);
+
+clip.addIncident(myGroup,3000)

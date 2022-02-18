@@ -3,7 +3,7 @@ export default [
     name: "Default",
     value: {
       colorText:"white",
-      backgroundColor:"white",
+      backgroundColor:"#101010",
       title1: "TRAVEL",
       subtitle1:"WITH FRIENDS",
       title2:"COLLECT",
