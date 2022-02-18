@@ -556,7 +556,7 @@ export const clip = new HTMLClip({
   initParams: initParams[0].value,
   audioSources: [
     {
-      src: "./my.mp3",
+      src: "https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/travel-clip/travel.mp3",
       id: "my-mp3",
       classes: ["songs", "rock"],
       base64: false,
