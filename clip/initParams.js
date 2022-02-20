@@ -31,7 +31,7 @@ export default [
       img15:"https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-and-man.jpeg?raw=true",
       img30:"https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/caravan-dog.png?raw=true",
       video16:"https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/map.mp4?raw=true",
-      img17:"https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-back.jpeg?raw=true",
+      img17:"https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-snow.jpeg?raw=true",
       img37:"https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/mountain-breath.jpeg?raw=true",
       video18_35:"https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-road.mp4?raw=true",
       img19_28:"https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/photo.jpeg?raw=true",

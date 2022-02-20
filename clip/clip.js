@@ -280,7 +280,7 @@ export const clip = new HTMLClip({
     clip-path: polygon(0 0, 0 0, 0 0, 0 0, 0 0);
   }
   .container37 .lr-con{
-    background:url({{initParams.img17_37}});
+    background:url({{initParams.img37}});
     background-size: cover;
   }
   .lr-bg-wrapper,.ud-bg-wrapper{
