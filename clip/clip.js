@@ -233,12 +233,12 @@ export const clip = new HTMLClip({
     background:url({{initParams.img14}});
     background-size: cover;
   }
-  .container15,.container30 .bg{
-    background:url({{initParams.img15_30}});
+  .container15{
+    background:url({{initParams.img15}});
     background-size: cover;
   }
-  .container17,.container37 .lr-con{
-    background:url({{initParams.img17_37}});
+  .container17{
+    background:url({{initParams.img17}});
     background-size: cover;
   }
   .container19,.container28{
@@ -265,6 +265,10 @@ export const clip = new HTMLClip({
     background:url({{initParams.img29}});
     background-size: cover;
   }
+  .container30 .bg{
+    background:url({{initParams.img30}});
+    background-size: cover;
+  }
   .container31{
     background:url({{initParams.img31}});
     background-size: cover;
@@ -274,6 +278,10 @@ export const clip = new HTMLClip({
     background:url({{initParams.img32}});
     background-size: cover;
     clip-path: polygon(0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  .container37 .lr-con{
+    background:url({{initParams.img17_37}});
+    background-size: cover;
   }
   .lr-bg-wrapper,.ud-bg-wrapper{
     width:800px;
@@ -462,6 +470,11 @@ export const clip = new HTMLClip({
   font-weight:900;
   letter-spacing:7px;
   padding:10px;
+  font-size:60px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: {{initParams.colorText}};
  }
  .text2.mask,.text4.mask,.text6.mask{
   opacity:0;
@@ -471,9 +484,9 @@ export const clip = new HTMLClip({
   top:50%;
   right:50%;
   transform:translateY(-50%);
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   color:{{initParams.colorText}};
-  font-size:20px;
+  font-size:40px;
   font-weight:200;
 }
 .title5b{
@@ -481,9 +494,9 @@ export const clip = new HTMLClip({
   top:50%;
   left:51%;
   transform:translateY(-50%);
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   color:{{initParams.colorText}};
-  font-size:20px;
+  font-size:40px;
   font-weight:900;
 }
 .text5{
@@ -527,7 +540,7 @@ export const clip = new HTMLClip({
   top:50%;
   transform:translateY(-50%);
   background: {{initParams.colorText}};
-  color: black;
+  color: {{initParams.mixBlendColor}};
   mix-blend-mode: screen;
   font-size:27px;
   letter-spacing:10px;
