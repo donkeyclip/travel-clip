@@ -17,6 +17,7 @@ export default [
       text7:"ROAD TRIPS",
       text8:"TAKE PICTURES",
       video1:"https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/boots.mp4?raw=true",
+      img1:"assets/boots.gif",
       video2_7:"https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-car.mp4?raw=true",
       video3:"https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/clothes.mp4?raw=true",
       img4_33:"https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-map.jpeg?raw=true",

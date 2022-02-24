@@ -213,6 +213,19 @@ export const clip = new HTMLClip({
     height:450px;
     position:absolute;
   }
+
+  .container1{
+    background:url({{initParams.img1}});
+    background-size: cover;
+  }
+  .container2{
+    background:url({{initParams.img2}});
+    background-size: cover;
+  }
+  .container3{
+    background:url({{initParams.img3}});
+    background-size: cover;
+  }
   .container4 .bg,.container33 .bg{
     background:url({{initParams.img4_33}});
     background-size: cover;
@@ -600,25 +613,25 @@ const effect = new AudioEffect(
 clip.addIncident(effect, 27500);
 
 //video
-const video1 = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/boots.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container1",
-  }
-);
-const playback1 = new VideoPlugin.Playback({
-  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
-  duration: 1500, // the duration of the playback in milliseconds
-});
+// const video1 = new VideoPlugin.Clip(
+//   {
+//     sources: [
+//       "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/boots.mp4?raw=true"
+//     ],
+//     width: 800,
+//     height: 450,
+//   },
+//   {
+//     selector: ".container1",
+//   }
+// );
+// const playback1 = new VideoPlugin.Playback({
+//   selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
+//   duration: 1500, // the duration of the playback in milliseconds
+// });
 
-clip.addIncident(video1,0);
-video1.addIncident(playback1,0);
+// clip.addIncident(video1,0);
+// video1.addIncident(playback1,0);
 
 const video2 = new VideoPlugin.Clip(
   {
