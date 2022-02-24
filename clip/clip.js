@@ -40,7 +40,7 @@ export const clip = new HTMLClip({
     </div>
   </div>
   <div class="container6"></div>
-    <div class="container7"></div>
+  <div class="container7"></div>
   <div class="text2 mask">
       <div class="title">{{ initParams.title2 }}</div>
       <div class="subtitle">{{ initParams.subtitle2 }}</div>
@@ -213,16 +213,15 @@ export const clip = new HTMLClip({
     height:450px;
     position:absolute;
   }
-
   .container1{
     background:url({{initParams.img1}});
     background-size: cover;
   }
-  .container2{
-    background:url({{initParams.img2}});
+  .container2,container7{
+    background:url({{initParams.img2_7}});
     background-size: cover;
   }
-  .container3{
+  .container3 .vid{
     background:url({{initParams.img3}});
     background-size: cover;
   }
@@ -234,8 +233,24 @@ export const clip = new HTMLClip({
     background:url({{initParams.img5}});
     background-size: cover;
   }
+  .container6,.container34 .vid{
+    background:url({{initParams.img6_34}});
+    background-size: cover;
+  }
   .container8,.container11{
     background:url({{initParams.img8_11}});
+    background-size: cover;
+  }
+  .container9{
+    background:url({{initParams.img9}});
+    background-size: cover;
+  }
+  .container10,.container36{
+    background:url({{initParams.img10_36}});
+    background-size: cover;
+  }
+  .container12{
+    background:url({{initParams.img12}});
     background-size: cover;
   }
   .container13{
@@ -250,12 +265,28 @@ export const clip = new HTMLClip({
     background:url({{initParams.img15}});
     background-size: cover;
   }
+  .container16{
+    background:url({{initParams.img16}});
+    background-size: cover;
+  }
   .container17{
     background:url({{initParams.img17}});
     background-size: cover;
   }
+  .container18,.container35{
+    background:url({{initParams.img18_35}});
+    background-size: cover;
+  }
   .container19,.container28{
     background:url({{initParams.img19_28}});
+    background-size: cover;
+  }
+  .container20 .vid{
+    background:url({{initParams.img20}});
+    background-size: cover;
+  }
+  .container21 .vid,.container22 .vid{
+    background:url({{initParams.img21_22}});
     background-size: cover;
   }
   .container23 .bg{
@@ -612,403 +643,6 @@ const effect = new AudioEffect(
 
 clip.addIncident(effect, 27500);
 
-//video
-// const video1 = new VideoPlugin.Clip(
-//   {
-//     sources: [
-//       "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/boots.mp4?raw=true"
-//     ],
-//     width: 800,
-//     height: 450,
-//   },
-//   {
-//     selector: ".container1",
-//   }
-// );
-// const playback1 = new VideoPlugin.Playback({
-//   selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
-//   duration: 1500, // the duration of the playback in milliseconds
-// });
-
-// clip.addIncident(video1,0);
-// video1.addIncident(playback1,0);
-
-const video2 = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-car.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container2",
-  }
-);
-const playback2 = new VideoPlugin.Playback({
-  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
-  duration: 1500, // the duration of the playback in milliseconds
-});
-
-clip.addIncident(video2,1000);
-video2.addIncident(playback2,0);
-
-const video3a = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/clothes.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container3 .lr-bg-wrapper-0 .vid",
-  }
-);
-const playback3a = new VideoPlugin.Playback({
-  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
-  duration: 1500, // the duration of the playback in milliseconds
-});
-const video3b = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/clothes.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container3 .lr-bg-wrapper-1 .vid",
-  }
-);
-const playback3b = playback3a.clone({});
-
-clip.addIncident(video3a,2000);
-video3a.addIncident(playback3a,0);
-clip.addIncident(video3b,2000);
-video3b.addIncident(playback3b,0);
-
-const video6 = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-camera.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container6",
-  }
-);
-const playback6 = new VideoPlugin.Playback({
-  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
-  duration: 1500, // the duration of the playback in milliseconds
-});
-
-clip.addIncident(video6,4200);
-video6.addIncident(playback6,0);
-
-const video7 = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-car.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container7",
-  }
-);
-const playback7 = new VideoPlugin.Playback({
-  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
-  duration: 1500, // the duration of the playback in milliseconds
-});
-
-clip.addIncident(video7,4470);
-video7.addIncident(playback7,0);
-
-const video9 = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-caravan.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container9",
-  }
-);
-const playback9 = new VideoPlugin.Playback({
-  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
-  duration: 1500, // the duration of the playback in milliseconds
-});
-
-clip.addIncident(video9,5070);
-video9.addIncident(playback9,0);
-
-const video10 = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/travel-with-friends.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container10",
-  }
-);
-const playback10 = new VideoPlugin.Playback({
-  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
-  duration: 1500, // the duration of the playback in milliseconds
-});
-
-clip.addIncident(video10,5370);
-video10.addIncident(playback10,0);
-
-const video12 = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/ballons.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container12",
-  }
-);
-const playback12 = new VideoPlugin.Playback({
-  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
-  duration: 1000, // the duration of the playback in milliseconds
-});
-
-clip.addIncident(video12,6000);
-video12.addIncident(playback12,0);
-
-const video16 = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/map.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container16",
-  }
-);
-const playback16 = new VideoPlugin.Playback({
-  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
-  duration: 1000, // the duration of the playback in milliseconds
-});
-
-clip.addIncident(video16,8900);
-video16.addIncident(playback16,0);
-
-const video18 = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-road.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container18",
-  }
-);
-const playback18 = new VideoPlugin.Playback({
-  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
-  duration: 1500, // the duration of the playback in milliseconds
-});
-
-clip.addIncident(video18,10200);
-video18.addIncident(playback18,0);
-
-const video21a = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-with-map-car.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container21 .lr-bg-wrapper-0 .vid",
-  }
-);
-const playback21a = new VideoPlugin.Playback({
-  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
-  duration: 800, // the duration of the playback in milliseconds
-});
-
-clip.addIncident(video21a,12300);
-video21a.addIncident(playback21a,0);
-const video21b = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-with-map-car.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container21 .lr-bg-wrapper-1 .vid",
-  }
-);
-const playback21b = playback21a.clone({});
-clip.addIncident(video21b,12300);
-video21b.addIncident(playback21b,0);
-
-const video20a = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-caravan.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container20 .lr-wrapper-0 .vid",
-  }
-);
-const playback20a = new VideoPlugin.Playback({
-  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
-  duration: 1200, // the duration of the playback in milliseconds
-});
-
-clip.addIncident(video20a,11900);
-video20a.addIncident(playback20a,0);
-const video20b = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-caravan.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container20 .lr-wrapper-1 .vid",
-  }
-);
-const playback20b = playback20a.clone({});
-
-clip.addIncident(video20b,11900);
-video20b.addIncident(playback20b,0);
-
-const video22a = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-with-map-car.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container22 .bg-0",
-  }
-);
-const playback22a = new VideoPlugin.Playback({
-  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
-  duration: 1900, // the duration of the playback in milliseconds
-});
-
-clip.addIncident(video22a,12600);
-video22a.addIncident(playback22a,0);
-const video22b = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-with-map-car.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container22 .bg-1",
-  }
-);
-const playback22b = playback22a.clone({});
-
-clip.addIncident(video22b,12600);
-video22b.addIncident(playback22b,0);
-
-const video34a = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-camera.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container34 .l-con",
-  }
-);
-const playback34a = new VideoPlugin.Playback({
-  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
-  duration: 1400, // the duration of the playback in milliseconds
-});
-
-clip.addIncident(video34a,19900);
-video34a.addIncident(playback34a,0);
-const video34b = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/girl-camera.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container34 .r-con",
-  }
-);
-const playback34b = playback34a.clone({});
-
-clip.addIncident(video34b,19900);
-video34b.addIncident(playback34b,0);
-
-const video35 = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/woman-road.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container35",
-  }
-);
-const playback35 = new VideoPlugin.Playback({
-  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
-  duration: 900, // the duration of the playback in milliseconds
-});
-
-clip.addIncident(video35,20950);
-video35.addIncident(playback35,0);
-const video36 = new VideoPlugin.Clip(
-  {
-    sources: [
-      "https://github.com/ElisavetAmpatzidou/travel-clip/blob/main/demo/assets/travel-with-friends.mp4?raw=true"
-    ],
-    width: 800,
-    height: 450,
-  },
-  {
-    selector: ".container36",
-  }
-);
-const playback36 = new VideoPlugin.Playback({
-  selector: "!#video", // that's mandatory, it should always have the value "!#video" and it targets the video of the VideoPlugin.Clip
-  duration: 1500, // the duration of the playback in milliseconds
-});
-
-clip.addIncident(video36,21500);
-video36.addIncident(playback36,0);
 
 const container1appear = new CSSEffect(
   {
