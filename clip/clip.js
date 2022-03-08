@@ -1,8 +1,5 @@
 import { HTMLClip, CSSEffect, AudioPlayback,Group,AudioEffect } from "@donkeyclip/motorcortex";
 import initParams from "./initParams";
-import MotorCortex from "@donkeyclip/motorcortex";
-import MCVideo from "@kissmybutton/motorcortex-video";
-const VideoPlugin = MotorCortex.loadPlugin(MCVideo);
 
 export const clip = new HTMLClip({
   html: `
@@ -613,7 +610,7 @@ export const clip = new HTMLClip({
   initParams: initParams[0].value,
   audioSources: [
     {
-      src: "https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/travel-clip/travel.mp3",
+      src: initParams[0].value.song,
       id: "my-mp3",
       classes: ["songs", "rock"],
       base64: false,
