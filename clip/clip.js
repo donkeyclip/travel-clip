@@ -1,5 +1,6 @@
 import { HTMLClip, CSSEffect, AudioPlayback,Group,AudioEffect } from "@donkeyclip/motorcortex";
 import initParams from "./initParams";
+import initParamsValidationRules from "./initParamsValidationRules";
 
 export const clip = new HTMLClip({
   html: `
@@ -10,9 +11,9 @@ export const clip = new HTMLClip({
       <div class="lr-bg-wrapper lr-bg-wrapper-0"><div class="vid"></div></div>
       <div class="lr-bg-wrapper lr-bg-wrapper-1"><div class="vid"></div></div>
     </div>
-    <div class="text1">
-      <div class="title">{{ initParams.title1 }}</div>
-      <div class="subtitle">{{ initParams.subtitle1 }}</div>
+    <div class="title1">
+      <div class="title1a">{{ initParams.title1a }}</div>
+      <div class="title1b">{{ initParams.title1b }}</div>
     </div>
     <div class="container4">
       <div class="lr-bg-wrapper lr-bg-wrapper-0">
@@ -24,23 +25,23 @@ export const clip = new HTMLClip({
     </div>
     <div class="container5">
     <div class="ud-bg-wrapper ud-bg-wrapper-0">
-      <div class="bg bg-0"><div class="text2">
-      <div class="title">COLLECT</div>
-      <div class="subtitle">MOMENTS</div>
+      <div class="bg bg-0"><div class="title2">
+      <div class="title2a">{{ initParams.title2a }}</div>
+      <div class="title2b">{{ initParams.title2b }}</div>
     </div></div>
     </div>
     <div class="ud-bg-wrapper ud-bg-wrapper-1">
-      <div class="bg bg-1"><div class="text2">
-      <div class="title">{{ initParams.title2 }}</div>
-      <div class="subtitle">{{ initParams.subtitle2 }}</div>
+      <div class="bg bg-1"><div class="title2">
+      <div class="title2a">{{ initParams.title2a }}</div>
+      <div class="title2b">{{ initParams.title2b }}</div>
     </div></div>
     </div>
   </div>
   <div class="container6"></div>
   <div class="container7"></div>
-  <div class="text2 mask">
-      <div class="title">{{ initParams.title2 }}</div>
-      <div class="subtitle">{{ initParams.subtitle2 }}</div>
+  <div class="title2 mask">
+      <div class="title2a">{{ initParams.title2a }}</div>
+      <div class="title2b">{{ initParams.title2b }}</div>
   </div>
   <div class="container8"></div>
 <div class="container9"></div>
@@ -48,13 +49,13 @@ export const clip = new HTMLClip({
 <div class="container11"></div>
 <div class="container12"></div>
 <div class="container13"></div>
-<div class="text3">{{ initParams.text3}}</div>
+<div class="title3">{{ initParams.title3}}</div>
 <div class="container14"></div>
 <div class="container15"></div>
 <div class="container16">
-  <div class="borderText text4">
+  <div class="borderText title4">
     <div id="root">
-      <div class="looper" mc-for="key,item" mc-of="initParams.text4">
+      <div class="looper" mc-for="key,item" mc-of="initParams.title4">
           <span>{{ item }}</span>
       </div>
     </div>
@@ -62,9 +63,9 @@ export const clip = new HTMLClip({
 </div>
 <div class="container17"></div>
 <div class="container18"></div>
-<div class="borderText text4 mask">
+<div class="borderText title4 mask">
   <div id="root">
-    <div class="looper" mc-for="key,item" mc-of="initParams.text4">
+    <div class="looper" mc-for="key,item" mc-of="initParams.title4">
         <span>{{ item }}</span>
     </div>
   </div>
@@ -98,7 +99,7 @@ export const clip = new HTMLClip({
       <div class="bg bg-1"></div>
       </div>
 </div>
-<div class="text5">
+<div class="title5">
   <div class="title5a">{{initParams.title5a}}</div>
   <div class="title5b">{{initParams.title5b}}</div>
 </div>
@@ -111,18 +112,18 @@ export const clip = new HTMLClip({
   <div class="lr-con r-con"></div>
 </div>
 <div class="container26">
-  <div class="borderText text6">
+  <div class="borderText title6">
     <div id="root">
-      <div class="looper" mc-for="key,item" mc-of="initParams.text6">
+      <div class="looper" mc-for="key,item" mc-of="initParams.title6">
           <span>{{ item }}</span>
       </div>
     </div>
   </div>
 </div>
 <div class="container27"></div>
-<div class="borderText text6 mask">
+<div class="borderText title6 mask">
   <div id="root">
-    <div class="looper" mc-for="key,item" mc-of="initParams.text6">
+    <div class="looper" mc-for="key,item" mc-of="initParams.title6">
         <span>{{ item }}</span>
     </div>
   </div>
@@ -133,11 +134,11 @@ export const clip = new HTMLClip({
   <div class="lr-con r-con"></div>
 </div>
 <div class="container30">
-  <div class="bg half-l"><div class="text7 text7left">{{initParams.text7}}</div></div>
-  <div class="bg half-r"><div class="text7 text7right">{{initParams.text7}}</div></div>
+  <div class="bg half-l"><div class="title7 title7left">{{initParams.title7}}</div></div>
+  <div class="bg half-r"><div class="title7 title7right">{{initParams.title7}}</div></div>
 </div>
 <div class="container31"></div>
-<div class="text7 mask">{{initParams.text7}}</div>
+<div class="title7 mask">{{initParams.title7}}</div>
 <div class="container32"></div>
 <div class="container33">
   <div class="bg half-l"></div>
@@ -145,14 +146,14 @@ export const clip = new HTMLClip({
 </div>
 <div class="container34">
   <div class="lr-con l-con"><div class="vid"></div>
-    <div class="text8 text8left">{{initParams.text8}}</div>
+    <div class="title8 title8left">{{initParams.title8}}</div>
   </div>
   <div class="lr-con r-con"><div class="vid"></div>
-    <div class="text8 text8right">{{initParams.text8}}</div>
+    <div class="title8 title8right">{{initParams.title8}}</div>
   </div>
 </div>
 <div class="container35"></div>
-<div class="text8 mask">{{initParams.text8}}</div>
+<div class="title8 mask">{{initParams.title8}}</div>
 <div class="container36"></div>
 <div class="container37">
   <div class="lr-con l-con"></div>
@@ -443,7 +444,7 @@ export const clip = new HTMLClip({
     width:800px;
     height:450px;
   }
-  .text1{
+  .title1{
     position:absolute;
     top:90%;
     left:50%;
@@ -453,15 +454,15 @@ export const clip = new HTMLClip({
     text-align:center;
     color:{{initParams.colorText}};
   }
-  .text1 .title{
+  .title1a{
     letter-spacing: 30px;
     font-size:80px;
     text-decoration: underline;
   }
- .text1 .subtitle{
+ .title1b{
    letter-spacing: 20px;
  }
- .text2{
+ .title2{
   position:absolute;
   top:50%;
   left:50%;
@@ -471,15 +472,15 @@ export const clip = new HTMLClip({
   text-align:center;
   color:{{initParams.colorText}};
  }
- .text2 .title{
+ .title2a{
   letter-spacing: 30px;
   font-size:80px;
   }
-  .text2 .subtitle{
+  .title2b{
   letter-spacing: 20px;
   background: rgba(102, 107, 115,0.4);
   }
- .text3 {
+ .title3 {
   position:absolute;
   top:50%;
   left:-50%;
@@ -506,7 +507,7 @@ export const clip = new HTMLClip({
   background: rgba(102, 107, 115,0.3);
   text-align:center;
  }
- .text4{
+ .title4{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight:900;
   letter-spacing:7px;
@@ -517,7 +518,7 @@ export const clip = new HTMLClip({
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: {{initParams.colorText}};
  }
- .text2.mask,.text4.mask,.text6.mask{
+ .title2.mask,.title4.mask,.title6.mask{
   opacity:0;
 }
 .title5a{
@@ -540,20 +541,20 @@ export const clip = new HTMLClip({
   font-size:40px;
   font-weight:900;
 }
-.text5{
+.title5{
   position:absolute;
   width:800px;
   height:450px;
   opacity:0;
 }
-.text6{
+.title6{
   border-radius:50%;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight:400;
   letter-spacing:5px;
   padding:20px;
  }
- .text7{
+ .title7{
   position:absolute;
   top:50%;
   transform:translateY(-50%);
@@ -565,18 +566,18 @@ export const clip = new HTMLClip({
   padding-left:7px;
   border-bottom:2px solid {{initParams.colorText}};
  }
- .text7left{
+ .title7left{
    left:20%;
  }
- .text7right{
+ .title7right{
   right:20%;
  }
-.text7.mask,.text8.mask{
+.title7.mask,.title8.mask{
   opacity:0;
   left:50%;
   transform:translate(-50%,-50%);
 }
-.text8{
+.title8{
   position:absolute;
   top:50%;
   transform:translateY(-50%);
@@ -589,10 +590,10 @@ export const clip = new HTMLClip({
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight:900;
 }
-.text8left{
+.title8left{
   left:70%;
 }
-.text8right{
+.title8right{
   right:70%;
 }
   `,
@@ -607,6 +608,7 @@ export const clip = new HTMLClip({
     width: "800px",
     height: "450px",
   },
+  initParamsValidationRules,
   initParams: initParams[0].value,
   audioSources: [
     {
@@ -653,14 +655,14 @@ const container1appear = new CSSEffect(
     easing: "easeOutQuint",
   }
 );
-const text1appear = new CSSEffect(
+const title1appear = new CSSEffect(
   {
     animatedAttrs: {
       top: "50%",
     },
   },
   {
-    selector: ".text1",
+    selector: ".title1",
     duration: 200,
     easing: "easeOutQuint",
   }
@@ -746,14 +748,14 @@ const container5appear = new CSSEffect(
     easing: "easeInCubic",
   }
 );
-const text2appear = new CSSEffect(
+const title2appear = new CSSEffect(
   {
     animatedAttrs: {
       opacity:1,
     },
   },
   {
-    selector: ".text2.mask",
+    selector: ".title2.mask",
     duration: 1
   }
 );
@@ -890,15 +892,15 @@ const container12remove = new CSSEffect(
     duration:1,
   }
 );
-//text3
-const text3appear = new CSSEffect(
+//title3
+const title3appear = new CSSEffect(
   {
     animatedAttrs: {
       left: "50%",
     },
   },
   {
-    selector: ".text3",
+    selector: ".title3",
     duration:400,
     easing:"easeInOutSine"
   }
@@ -949,32 +951,32 @@ const container16appear = new CSSEffect(
     easing: "easeInOutQuad",
   }
 );
-const text4move = new CSSEffect(
+const title4move = new CSSEffect(
   {
     animatedAttrs: {
       top:"50%",
     },
   },
   {
-    selector: ".text4",
+    selector: ".title4",
     duration:300,
     easing: "easeInOutQuad",
   }
 );
-const text4mask = text2appear.clone(
+const title4mask = title2appear.clone(
   {},
   {
-    selector: ".text4.mask",
+    selector: ".title4.mask",
   }
 );
-const text4bgremove = new CSSEffect(
+const title4bgremove = new CSSEffect(
   {
     animatedAttrs:{
       opacity:0
     },
   },
   {
-    selector: ".container16 .text4",
+    selector: ".container16 .title4",
     duration:1
   }
 );
@@ -1102,7 +1104,7 @@ const container22appearbg1 = new CSSEffect(
     selector: ".container22 .lr-bg-wrapper-1 .bg-1",
   }
 );
-const text5mask = new CSSEffect(
+const title5mask = new CSSEffect(
   {
     animatedAttrs: {
       opacity:1
@@ -1110,7 +1112,7 @@ const text5mask = new CSSEffect(
   },
   {
     duration: 1,
-    selector: ".text5",
+    selector: ".title5",
   }
 );
 //container23
@@ -1191,27 +1193,27 @@ const container26appear = new CSSEffect(
     easing: "easeInOutQuad",
   }
 );
-const text6move = text4move.clone(
+const title6move = title4move.clone(
   {
   },
   {
-    selector: ".text6",
+    selector: ".title6",
   }
 );
-const text6mask = text2appear.clone(
+const title6mask = title2appear.clone(
   {},
   {
-    selector: ".text6.mask",
+    selector: ".title6.mask",
   }
 );
-const text6bgremove = new CSSEffect(
+const title6bgremove = new CSSEffect(
   {
     animatedAttrs:{
       opacity:0
     },
   },
   {
-    selector: ".container26 .text6",
+    selector: ".container26 .title6",
     duration:1
   }
 );
@@ -1281,7 +1283,7 @@ const container30appearbg1 = new CSSEffect(
     easing: "easeInOutQuad",
   }
 );
-const text7left = new CSSEffect(
+const title7left = new CSSEffect(
   {
     animatedAttrs: {
       left:"50%",
@@ -1291,12 +1293,12 @@ const text7left = new CSSEffect(
     },
   },
   {
-    selector: ".text7left",
+    selector: ".title7left",
     duration:350,
     easing: "easeInOutQuad",
   }
 );
-const text7right = new CSSEffect(
+const title7right = new CSSEffect(
   {
     animatedAttrs: {
       right:"50%",
@@ -1306,12 +1308,12 @@ const text7right = new CSSEffect(
     },
   },
   {
-    selector: ".text7right",
+    selector: ".title7right",
     duration:350,
     easing: "easeInOutQuad",
   }
 );
-const text7mask = new CSSEffect(
+const title7mask = new CSSEffect(
   {
     animatedAttrs: {
       opacity:1
@@ -1319,10 +1321,10 @@ const text7mask = new CSSEffect(
   },
   {
     duration: 1,
-    selector: ".text7.mask",
+    selector: ".title7.mask",
   }
 );
-const text7lrremove = new CSSEffect(
+const title7lrremove = new CSSEffect(
   {
     animatedAttrs: {
       opacity:0
@@ -1330,7 +1332,7 @@ const text7lrremove = new CSSEffect(
   },
   {
     duration: 1,
-    selector: ".text7left,.text7right",
+    selector: ".title7left,.title7right",
   }
 );
 //container31
@@ -1397,28 +1399,28 @@ const container34appearbg1 = container29appearbg1.clone(
     selector:".container34 .r-con"
   }
 );
-const text8left = text7left.clone(
+const title8left = title7left.clone(
   {},
   {
-    selector:".text8left"
+    selector:".title8left"
   }
 );
-const text8right = text7right.clone(
+const title8right = title7right.clone(
   {},
   {
-    selector:".text8right"
+    selector:".title8right"
   }
 );
-const text8mask = text7mask.clone(
+const title8mask = title7mask.clone(
   {},
   {
-    selector:".text8.mask"
+    selector:".title8.mask"
   }
 );
-const text8lrremove = text7lrremove.clone(
+const title8lrremove = title7lrremove.clone(
   {},
   {
-    selector:".text8left,.text8right"
+    selector:".title8left,.title8right"
   }
 );
 //container35
@@ -1453,7 +1455,7 @@ const container37appearbg1 = container25appearbg1.clone(
 const myGroup = new Group();
 
 myGroup.addIncident(container1appear, 0);
-myGroup.addIncident(text1appear, 0);
+myGroup.addIncident(title1appear, 0);
 myGroup.addIncident(container1remove, 1000);
 myGroup.addIncident(container2appear, 1000);
 myGroup.addIncident(container2remove, 2000);
@@ -1462,7 +1464,7 @@ myGroup.addIncident(container3removebg0, 3000);
 myGroup.addIncident(container3removebg1, 3000);
 myGroup.addIncident(container4appear, 3000);
 myGroup.addIncident(container5appear, 3600);
-myGroup.addIncident(text2appear, 3900);
+myGroup.addIncident(title2appear, 3900);
 
 myGroup.addIncident(container6appear, 4200);
 myGroup.addIncident(container6change1, 4500);
@@ -1487,7 +1489,7 @@ myGroup.addIncident(container10change3, 5800);
 myGroup.addIncident(container11appear, 5670);
 
 myGroup.addIncident(container12appear, 6000);
-myGroup.addIncident(text3appear, 6000);
+myGroup.addIncident(title3appear, 6000);
 myGroup.addIncident(container13appear, 6700);
 
 myGroup.addIncident(container14appear, 7400);
@@ -1496,9 +1498,9 @@ myGroup.addIncident(container14remove, 8900);
 myGroup.addIncident(container15appear, 8100);
 
 myGroup.addIncident(container16appear, 8900);
-myGroup.addIncident(text4move, 8900);
-myGroup.addIncident(text4mask, 9200);
-myGroup.addIncident(text4bgremove, 9201);
+myGroup.addIncident(title4move, 8900);
+myGroup.addIncident(title4mask, 9200);
+myGroup.addIncident(title4bgremove, 9201);
 myGroup.addIncident(container16remove, 9300);
 myGroup.addIncident(container17appear, 9300);
 myGroup.addIncident(container17remove, 10200);
@@ -1512,7 +1514,7 @@ myGroup.addIncident(container20removebg0, 12600);
 myGroup.addIncident(container20removebg1, 12600);
 myGroup.addIncident(container22appearbg0, 12600);
 myGroup.addIncident(container22appearbg1, 12600);
-myGroup.addIncident(text5mask, 13000);
+myGroup.addIncident(title5mask, 13000);
 myGroup.addIncident(container23appearbg0,14000);
 myGroup.addIncident(container23appearbg1,14000);
 myGroup.addIncident(container24appearbg0, 15500); 
@@ -1521,19 +1523,19 @@ myGroup.addIncident(container25appearbg0, 15800);
 myGroup.addIncident(container25appearbg1, 15800);
 
 myGroup.addIncident(container26appear, 16200);
-myGroup.addIncident(text6move, 16200);
-myGroup.addIncident(text6mask, 16500);
-myGroup.addIncident(text6bgremove, 16501);
+myGroup.addIncident(title6move, 16200);
+myGroup.addIncident(title6mask, 16500);
+myGroup.addIncident(title6bgremove, 16501);
 myGroup.addIncident(container27appear, 16900);
 myGroup.addIncident(container28appear, 17300);
 myGroup.addIncident(container29appearbg0, 17500);
 myGroup.addIncident(container29appearbg1, 17500);
 myGroup.addIncident(container30appearbg0, 17900);
 myGroup.addIncident(container30appearbg1, 17900);
-myGroup.addIncident(text7left, 17900);
-myGroup.addIncident(text7right, 17900);
-myGroup.addIncident(text7mask, 18250);
-myGroup.addIncident(text7lrremove, 18251);
+myGroup.addIncident(title7left, 17900);
+myGroup.addIncident(title7right, 17900);
+myGroup.addIncident(title7mask, 18250);
+myGroup.addIncident(title7lrremove, 18251);
 
 myGroup.addIncident(container31appear, 18400);
 myGroup.addIncident(container31change, 18900);
@@ -1544,10 +1546,10 @@ myGroup.addIncident(container33appearbg1, 19600);
 
 myGroup.addIncident(container34appearbg0, 19900);
 myGroup.addIncident(container34appearbg1, 19900);
-myGroup.addIncident(text8left, 19900);
-myGroup.addIncident(text8right, 19900);
-myGroup.addIncident(text8mask, 20250);
-myGroup.addIncident(text8lrremove, 20251);
+myGroup.addIncident(title8left, 19900);
+myGroup.addIncident(title8right, 19900);
+myGroup.addIncident(title8mask, 20250);
+myGroup.addIncident(title8lrremove, 20251);
 
 myGroup.addIncident(container35appear, 20950); 
 myGroup.addIncident(container36appear, 21500);
