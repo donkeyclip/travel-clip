@@ -29,7 +29,7 @@
     }
   },
   "dependencies": {
-    "@donkeyclip/motorcortex": "8.0.4",
+    "@donkeyclip/motorcortex": "^9.5.4",
     "@kissmybutton/motorcortex-video": "2.0.0"
   },
   "devDependencies": {
